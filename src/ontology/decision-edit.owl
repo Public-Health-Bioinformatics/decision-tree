@@ -1,0 +1,3417 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/decision.owl/"
+     xml:base="http://purl.obolibrary.org/obo/decision.owl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/decision.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/decision/releases/2018-02-26/decision.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncit_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/gazetteer_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/pato_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/hp_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/efo_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0000006 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000006">
+        <obo:IAO_0000115 xml:lang="en">The user interface label is the label that should be placed on a datum when presented on a form or report</obo:IAO_0000115>
+        <obo:IAO_0000117>Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">user interface label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0000162 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000162">
+        <rdfs:label xml:lang="en">user interface definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001745 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001745">
+        <obo:IAO_0000115 xml:lang="en">A user interface help annotation is a textual phrase to display with an entity on a form or report that provides some detail about what the entity is or how it is being used.</obo:IAO_0000115>
+        <obo:IAO_0000117>Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">user interface help</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasExactSynonym"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcmitype/Image"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label>see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000092">
+        <rdfs:label xml:lang="en">has material basis in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000094 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000094">
+        <rdfs:label xml:lang="en">has phenotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000097 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000097">
+        <rdfs:label xml:lang="en">has protocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000098 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000098">
+        <rdfs:label xml:lang="en">preceded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000099 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000099">
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <rdfs:label>has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <rdfs:label>location of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:label>located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>adjacent to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <rdfs:label>has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000000">
+        <obo:IAO_0000115 xml:lang="en">This hierarchy is more of a SKOS type concept hierarchy.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">infectious disease research topic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">1. preparedness (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">preparedness (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">2. identification (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This topic is focused on methods for determining whether clusters of infectious disease cases have occured, and what pathogen(s) are associated with an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">identification (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">4. treatment (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This topic is about helping patients survive and heal from an outbreak of infectious disease.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">treatment (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">3. prevention (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">The infectious disease prevention topic is about reducing or eliminating the pathogen transmission cycle of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">prevention (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">5. public health response (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">public health response (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">6. research response (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">research response (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">7. impact (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">impact (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006 xml:lang="en">8. debrief (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section focuses on the assessment of infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">debrief (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000009">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000010"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <obo:GENEPIO_0000006 xml:lang="en">2.5 outbreak disease</obo:GENEPIO_0000006>
+        <obo:IAO_0000118 xml:lang="en">What [infectious disease] is the cause of the outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">outbreak disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <obo:GENEPIO_0000006 xml:lang="en">2. outbreak infectious disease identification</obo:GENEPIO_0000006>
+        <obo:IAO_0000118 xml:lang="en">How was the outbreak disease identified?</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">Has various disease identification processes as parts.  THese can be linear or in parallel, including genotypic and phenotypic typing.
+
+ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infectious disease identification&quot;, since a CASE might not be related to a given outbreak.</rdfs:comment>
+        <rdfs:label xml:lang="en">outbreak infectious disease identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <obo:GENEPIO_0000006 xml:lang="en">4. outbreak disease early identification</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">this is an information content item resulting from the event of the completion of an infectious disease identification process concluding in a &quot;timely&quot; manner.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Was the outbreak disease identified at an early stage?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">outbreak disease early identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <obo:GENEPIO_0000006 xml:lang="en">5. outbreak disease identification delay</obo:GENEPIO_0000006>
+        <obo:IAO_0000118 xml:lang="en">Is/was outbreak disease identification delayed by dificulty in typing the pathogen?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">outbreak disease identification delay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000103"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000064"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <obo:GENEPIO_0000006 xml:lang="en">1. outbreak cluster recognition</obo:GENEPIO_0000006>
+        <obo:IAO_0000118 xml:lang="en">Has an infectious disease outbreak occurred?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">outbreak cluster recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Is there any local/institutional plan to respond to an outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. outbreak response plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Is the current learning incorporated in the preparedness plan?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">6. outbreak response plan learning component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Has the local community been involved in the development of a preparedness plan?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. outbreak response plan local community involvement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Are there any gaps / shortages in resources needed to respond to a potential outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. outbreak preparedness resource gap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Are there any actions to address the gaps / shortages?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. outbreak preparedness gap remediation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Who is involved, who is not involved and who do we need to keep in touch with in case of an outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. outbreak response plan role, personnel or communication component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000001"/>
+        <obo:IAO_0000118 xml:lang="en">Is data sharing a key component of outbreak preparedness plans?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">7. outbreak response plan data sharing component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000118 xml:lang="en">Is there a way to prevent the occurrence of [infectious disease]?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. outbreak disease prevention method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000118 xml:lang="en">Can an outbreak disease&apos;s route of transmission be reduced or eliminated?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. outbreak disease transmission prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000118 xml:lang="en">What type of patients have been identified with an infectious disease that is linked to the outbreak? (age, gender, co-morbidities, socioeconomic background, and profession)</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. outbreak patient demographic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000118 xml:lang="en">Is there a patient (population) susceptibility/vulnerability to [infectious disease]?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. outbreak population sub-group vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000118 xml:lang="en">Is there a location susceptibility / vulnerability to an infectious disease?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. outbreak location vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">How can we treat [infectious disease]?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. [infectious disease] treatment regimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">Is an outbreak infectious disease treatment having a positive effect on patient care?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. treatment regimen morbidity effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">Is the current treatment of the infectious disease having an effect reducing the number of cases identified?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. treatment regimen prevalence effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">How long is it taking for outbreak patients to recover?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. treatment regimen recovery duration effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">Has the &lt;b&gt;mortality rate&lt;/b&gt; changed due to the current measures?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. treatment regimen mortality effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">Is the outcome different between treated cases and untreated cases?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">6. treatment regimen efficacy metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Is the surveillance mechanism clearly integrated to routine clinical practice that could help to diagnosed early cases?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. integrated clinical outbreak surveillance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Is the surveillance system working for identifying evolving outbreaks?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. outbreak surveillance efficacy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Are there gaps / lack of resources in the surveillance system for identifying the cases related to the current outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. outbreak surveillance system gaps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">In the public health management guidelines are there any gaps in responding to the current evolving outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. public health outbreak management plan gaps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Is the public health information / data share with the research groups involved in the response? If not why not?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. public health and researcher data sharing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Who is involved in the public health response and who is missing?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">6. public health response roles and personnel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Are there one or more research groups actively involved in responding to the current outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. active outbreak research response group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">If there is a research group working on the current outbreak, is their research integrated to clinical practice that facilities both activities?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. integrated research-clinical response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Is communication established between public health teams and the research groups involved in the current outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. integrated research-public health response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Are the research groups findings [data] informing and feeding in real time the actions and initiatives from the public health teams?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. integrated research-public health real-time response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Is there coordination among the research groups responding to an outbreak? (Are they competing to access the population?)</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. integrated research group response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Are there clear guidelines of how and when to share data collected within the research response with other groups or public health authorities?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">7. research data-sharing plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">Are there any gaps of communication or information / data sharing between public health teams and research groups?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">6. research project coordination gap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000005"/>
+        <obo:IAO_0000118 xml:lang="en">Is sufficient information provided to the community about infection prevention and control?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">7. public health information delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000007"/>
+        <obo:IAO_0000118 xml:lang="en">In patients that recovered from the outbreak infection are there any long term consequences?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. outbreak recovered patient long-term prognosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000007"/>
+        <obo:IAO_0000118 xml:lang="en">For the health service, is there an impact on resources and services as a result of the outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. outbreak health service infrastructure impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000007"/>
+        <obo:IAO_0000118 xml:lang="en">Are there economic consequences of an outbreak? (impact on economically active population)</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. outbreak economic impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000007"/>
+        <obo:IAO_0000118 xml:lang="en">Is there an estimated burden of the disease at family, local or national level?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">4. outbreak disease burden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000007"/>
+        <obo:IAO_0000118 xml:lang="en">Is there more communication and sharing of information /data among stake holders [public health, clinicians, researchers and local government for better response to the outbreak?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">5. outbreak impact one-health data sharing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000008"/>
+        <obo:IAO_0000118 xml:lang="en">How often the short and long term plans for inter outbreak / pandemic  response reviewed?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1. outbreak response plan review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000008"/>
+        <obo:IAO_0000118 xml:lang="en">Who participates in setting up an outbreak response plan? And who is missing?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">2. outbreak response plan stakeholder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000008"/>
+        <obo:IAO_0000118 xml:lang="en">As a result of the present response are there any changes in the current case management, surveillance guidelines, and research plans that could help to improve preparedness.</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">3. outbreak response plan lesson learned</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000054">
+        <rdfs:label xml:lang="en">outbreak response resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">research paper (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000056">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000097"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000057"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">study (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">infectious disease dataset (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">study protocol (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">expertise (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">tool (website, software etc. resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">medical services (clinical, laboratory, etc. resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">funder or supporting agency (resource)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">What are the risk factors of progression to poor outcome?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1.2 [infectious disease] risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000064">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000013"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <obo:GENEPIO_0000006 xml:lang="en">1.5 outbreak disease signs and symptoms</obo:GENEPIO_0000006>
+        <obo:IAO_0000118 xml:lang="en">What is the common presentation of [infectious disease]? (sign and symptoms, diagnostic tests)</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">Should we have a &quot;historical disease signs and symptoms&quot; item, to differentiate between how an outbreak disease manifestation and previous generalizations?</rdfs:comment>
+        <rdfs:label xml:lang="en">outbreak disease signs and symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">To what extent are current management guidelines being followed?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">1.1 [infectious disease] treatment regimen execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000118 xml:lang="en">In light of the current evolving outbreak Is the current management of cases fit for purpose?</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">7. treatment regimen &quot;appropriateness&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000079"/>
+        <obo:GENEPIO_0000006 xml:lang="en">2009 H1N1 Influenza Pandemic: Insights</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">&quot;Here, we anticipate six public health challenges and identify data that are required for public health decision making:
+
+* Measuring age-specific immunity to infection
+* accurately quantifying severity
+* improving treatment outcomes for severe cases
+* quantifying the effectiveness of interventions
+* capturing the full impact of the pandemic on mortality
+* rapidly identifying and responding to antigenic variants&quot;</obo:IAO_0000115>
+        <dc:creator xml:lang="en">MRC Centre for Outbreak Analysis and Modelling, Imperial College London, United Kingdom. m.vankerkhove@imperial.ac.uk</dc:creator>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1371/journal.pmed.1000275</dc:identifier>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dx.plos.org/10.1371/journal.pmed.1000275</oboInOwl:hasAlternativeId>
+        <rdfs:label xml:lang="en">Studies needed to address public health challenges of the 2009 H1N1 Influenza pandemic: insights from modeling.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000055"/>
+        <rdfs:label xml:lang="en">published paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000055"/>
+        <rdfs:label xml:lang="en">pre-print paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000056"/>
+        <obo:GENEPIO_0000006 xml:lang="en">SPRINT-SARI</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">SPRINT-SARI is an international, multi-centre, prospective, short period incidence observational study of patients in participating hospitals and intensive care units (ICUs) with SARI.</obo:IAO_0000115>
+        <dcmitype:Image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://genepio.org/decisiontree/img/logo/sprint_sari_logo.jpeg</dcmitype:Image>
+        <dc:identifier xml:lang="en">https://isaric.tghn.org/sprint-sari/</dc:identifier>
+        <rdfs:label xml:lang="en">SPRINT-SARI: Short PeRiod IncideNce sTudy of Severe Acute Respiratory Infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000062"/>
+        <obo:IAO_0000115 xml:lang="en">The Wellcome Trust is a politically and financially independent global charitable foundation supporting scientists and researchers, exploring ideas in science, population health, medical innovation, the humanities and social sciences and public engagement.</obo:IAO_0000115>
+        <dcmitype:Image xml:lang="en">http://genepio.org/decisiontree/img/logo/wellcome_trust_logo.png</dcmitype:Image>
+        <rdfs:label xml:lang="en">Wellcome Trust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000058"/>
+        <obo:IAO_0000115 xml:lang="en">Tier 0 (Clinical data collection only) – Clinical data will be collected but no biological samples will be obtained for research purposes. The minimum clinical data set will summarise the illness episode and outcome, with the option to collect additional detailed clinical data at frequent intervals, according to local resources/needs.</obo:IAO_0000115>
+        <dcmitype:Image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://genepio.org/decisiontree/img/logo/isaric_logo.png</dcmitype:Image>
+        <rdfs:label xml:lang="en">ISARIC Tier0: Clinical Data Collection Only</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000054"/>
+        <rdfs:label xml:lang="en">data repositories</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000084"/>
+        <obo:IAO_0000115 xml:lang="en">ClinicalTrials.gov is a registry and results database of publicly and privately supported research studies conducted in the United States and around the world. Sponsors or investigators of certain clinical trials are required by U.S. law to register their trials on and submit summary results to ClinicalTrials.gov. Other international policies also require trial registration. Each study record includes a summary of the study protocol, including the purpose, recruitment status, and eligibility criteria.</obo:IAO_0000115>
+        <dcmitype:Image xml:lang="en">https://clinicaltrials.gov/ct2/html/images/ct.gov-nlm-nih-logo.png</dcmitype:Image>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ClinicalTrials.gov</dc:identifier>
+        <rdfs:label xml:lang="en">ClinicalTrials.gov</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000086">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4325"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">This data set represents the best estimates of WHO using methodologies for specific indicators that aim for comparability across countries and time; they are updated as more recent or revised data become available, or when there are changes to the methodology being used. Therefore, they are not always the same as official national estimates, although WHO whenever possible will provide Member States the opportunity to review and comment on data and estimates as part of country consultations. Note that these numbers are subject to change due to ongoing reclassification, retrospective investigation and availability of laboratory results. Please check the Indicator and Measurement Registry for indicator specific information.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">WHO 2014-2016 Ebola Outbreak Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000100">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000104"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000010"/>
+        <rdfs:label xml:lang="en">phenotypic infectious disease identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000010"/>
+        <rdfs:label xml:lang="en">laboratory testing infectious disease identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
+        <rdfs:label xml:lang="en">epidemiologist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000002"/>
+        <obo:GENEPIO_0000006 xml:lang="en">1.4 infectious disease symptoms</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">These would be established general symptoms of infectious diseases, by disease; a conjunction of symptoms for each disease. The vocabulary of a particular outbreak&apos;s symptoms would normally fit at least one of the given disease-symptom categories.   
+
+BUT: diseases have phases - through latent/incubation/contagious/ initial / subsequent .  feverish phase / vs. so it would be good to categorize a symptom&apos;s relation to a disease with respect to this.  But reasoner can&apos;t handle that.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">infectious disease symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4325">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000092"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186538"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_565995"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000094"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0001945"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0002013"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0002315"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0003326"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0012378"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_934"/>
+        <obo:IAO_0000115 xml:lang="en">A viral infectious disease that is a hemorrhagic fever, has_material_basis_in Zaire ebolavirus, has_material_basis_in Sudan ebolavirus, has_material_basis_in Cote d&apos;Ivoire ebolavirus, or has_material_basis_in Bundibugyo ebolavirus, which are transmitted_by contact with the body fluids of an infected animal or person, transmitted_by contaminated fomites, or transmitted_by infected medical equipment. The infection has_symptom fever, has_symptom headache, has_symptom joint pain, has_symptom muscle aches, has_symptom sore throat, has_symptom weakness, has_symptom diarrhea, has_symptom vomiting, has_symptom stomach pain, has_symptom rash, has_symptom red eyes, has_symptom hiccups, and has_symptom internal and external bleeding. [database_cross_reference: url:http://www.cdc.gov/ncidod/dvrd/spb/mnpages/dispages/ebola/qa.htm]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Ebola hemorrhagic fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_934 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_934">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_1110040"/>
+        <rdfs:label xml:lang="en">viral infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000009 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:label xml:lang="en">national geopolitical entity</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000060"/>
+        <obo:IAO_0000115 xml:lang="en">REDCap is a secure web application for building and managing online surveys and databases. While REDCap can be used to collect virtually any type of data (including 21 CFR Part 11, FISMA, and HIPAA-compliant environments), it is specifically geared to support online or offline data capture for research studies and operations.</obo:IAO_0000115>
+        <dcmitype:Image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://genepio.org/decisiontree/img/logo/redcap_logo.png</dcmitype:Image>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://projectredcap.org/</dc:identifier>
+        <rdfs:label xml:lang="en">REDCap (Research Electronic Data Capture)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00001016 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00001016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00001018 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00001018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00001066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00001066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00001508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00001508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002573 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002718 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002718">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002734 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002756 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002756">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002784 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002784">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002785 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002785">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002805 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002805">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002810 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002826 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002826">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002840 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002840">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002844">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002848 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002848">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002855">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002857 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00002857">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00002896">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003092 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003199 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003201 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003724 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003724">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003728">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003730">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003740 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003742 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003746 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003746">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003757 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003757">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003763 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003763">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003765 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00003775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003941 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003944 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003956 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00003956">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004040 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004125 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004187 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004682">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004699 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004759 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004762 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00004762">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004944 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001742"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004980 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004980">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004983 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00004983">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005109 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005121 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005139 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005252 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005322 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005464 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005643 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00005680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005910 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00005910">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00007859">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008796 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008796">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00008835 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00008835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009152 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009419 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009461 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009573 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009715 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00009715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25464"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009905 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009905">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009998 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00009998">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010010 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00010010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00010069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00010088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010090 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00010090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00010130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010365 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00010365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00010408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00010410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00010410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00011335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00011335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00012231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00012231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013864 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013864">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013888 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013888">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00013955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00013955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00014914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00014914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00016203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00016203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00049570 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_00049570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00051448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00051448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_02000609 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_02000609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89811"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_02000896 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_02000896">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_03000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_03000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_04000000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GAZ_04000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25632"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_07000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_07000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_07000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_07000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001742 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:label xml:lang="en">region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001811 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C87194"/>
+        <rdfs:label xml:lang="en">State (United States of America)</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000118 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPATH_0 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_0">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:label xml:lang="en">Ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <rdfs:label xml:lang="en">Zaire ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <rdfs:label xml:lang="en">Sudan ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_565995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_565995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <rdfs:label xml:lang="en">Bundibugyo ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C103180 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C103180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000658"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C106561 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C106561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C124295"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C115935 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C115935">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124295 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C124295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C126054 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C126054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C13235 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C13235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20587"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16084"/>
+        <obo:IAO_0000115 xml:lang="en">An uncontrolled observational study containing a detailed report of the diagnosis, treatment, and follow-up of an individual patient. Case reports also contain some demographic information about the patient (for example, age, gender, ethnic origin). [def-source: NCI]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">case study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115 xml:lang="en">Studies among [cancer patients] and healthy populations that involve no intervention or alteration in the status of the participants. [def-source: NCI]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">observational study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">medical specialty role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17471 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20587"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17734 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20108 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C20108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20587 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C20587">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25174 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25189 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25191 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25251 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25464 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25610 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25621 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25632 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25667 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25690 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C28147 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C28147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20587"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C28554 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C28554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C37987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C37987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C40978 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C40978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42614 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C42614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42775 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C42775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C45908 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C45908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54014 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C54014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000383"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68615 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C68615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C70810 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C70810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71164 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C71164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C80234 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C80234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C82508 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C82508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C87194 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C87194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C89811 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C89811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C93582 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C93874 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000719 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000719">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001444 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0001444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001799 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0001799">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004324 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

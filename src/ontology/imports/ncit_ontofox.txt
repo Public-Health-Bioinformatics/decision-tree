@@ -1,0 +1,96 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/decision/imports/ncit_import.owl
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C129000
+http://purl.obolibrary.org/obo/NCIT_C13235
+http://purl.obolibrary.org/obo/NCIT_C15197
+http://purl.obolibrary.org/obo/NCIT_C15213
+http://purl.obolibrary.org/obo/NCIT_C15273
+http://purl.obolibrary.org/obo/NCIT_C15320
+http://purl.obolibrary.org/obo/NCIT_C15362
+http://purl.obolibrary.org/obo/NCIT_C15714
+http://purl.obolibrary.org/obo/NCIT_C16084
+http://purl.obolibrary.org/obo/NCIT_C16229
+http://purl.obolibrary.org/obo/NCIT_C16268
+http://purl.obolibrary.org/obo/NCIT_C16423 #child
+http://purl.obolibrary.org/obo/NCIT_C16658
+http://purl.obolibrary.org/obo/NCIT_C16731
+http://purl.obolibrary.org/obo/NCIT_C16749
+http://purl.obolibrary.org/obo/NCIT_C16851
+http://purl.obolibrary.org/obo/NCIT_C16928
+http://purl.obolibrary.org/obo/NCIT_C17153
+http://purl.obolibrary.org/obo/NCIT_C17471
+http://purl.obolibrary.org/obo/NCIT_C17600
+http://purl.obolibrary.org/obo/NCIT_C18189
+http://purl.obolibrary.org/obo/NCIT_C18851
+http://purl.obolibrary.org/obo/NCIT_C36169
+http://purl.obolibrary.org/obo/NCIT_C53310
+http://purl.obolibrary.org/obo/NCIT_C53312
+http://purl.obolibrary.org/obo/NCIT_C53511
+http://purl.obolibrary.org/obo/NCIT_C71104
+http://purl.obolibrary.org/obo/NCIT_C83190
+http://purl.obolibrary.org/obo/NCIT_C85499
+http://purl.obolibrary.org/obo/NCIT_C93126
+http://purl.obolibrary.org/obo/NCIT_C98388
+http://purl.obolibrary.org/obo/NCIT_C98722
+
+http://purl.obolibrary.org/obo/NCIT_C42614 # name
+http://purl.obolibrary.org/obo/NCIT_C25191 # 	Person name
+includeAllChildren #		First Name, Last Name
+
+http://purl.obolibrary.org/obo/NCIT_C93874 #	Organization Name
+http://purl.obolibrary.org/obo/NCIT_C93582 #Job Title
+
+http://purl.obolibrary.org/obo/NCIT_C87194 # State
+http://purl.obolibrary.org/obo/NCIT_C25632 # Province
+http://purl.obolibrary.org/obo/NCIT_C89811 # Territory
+http://purl.obolibrary.org/obo/NCIT_C25464 # Country
+http://purl.obolibrary.org/obo/NCIT_C80234 # Municipality
+
+http://purl.obolibrary.org/obo/NCIT_C42775 # email address
+http://purl.obolibrary.org/obo/NCIT_C40978 # telephone number
+http://purl.obolibrary.org/obo/NCIT_C25690 # street address
+
+includeAllChildren
+
+http://purl.obolibrary.org/obo/NCIT_C20108 # country code
+includeAllChildren
+
+http://purl.obolibrary.org/obo/NCIT_C37987 # Life / alive
+http://purl.obolibrary.org/obo/NCIT_C68615 # date of birth
+http://purl.obolibrary.org/obo/NCIT_C70810 # date of death
+http://purl.obolibrary.org/obo/NCIT_C28554 # death
+includeAllChildren
+
+# http://purl.obolibrary.org/obo/NCIT_C82467 # complete recovery
+# http://purl.obolibrary.org/obo/NCIT_C25687 #State - the way something is with respect to its main attributes
+
+http://purl.obolibrary.org/obo/NCIT_C14419 # organism strain
+
+http://purl.obolibrary.org/obo/NCIT_C20587 # Age group
+includeAllChildren
+http://purl.obolibrary.org/obo/NCIT_C17471 # Youth
+http://purl.obolibrary.org/obo/NCIT_C28147 # Embryo
+http://purl.obolibrary.org/obo/NCIT_C13235 # Fetus
+
+http://purl.obolibrary.org/obo/NCIT_C25189 # Mother
+http://purl.obolibrary.org/obo/NCIT_C25174 # Father
+
+http://purl.obolibrary.org/obo/NCIT_C17734 # At risk population
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]

@@ -1,0 +1,45 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/decision/imports/doid_import.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/DOID_104 # bacterial infectious disease
+includeAllChildren
+
+http://purl.obolibrary.org/obo/DOID_DOID_0050012
+http://purl.obolibrary.org/obo/DOID_DOID_0060478
+http://purl.obolibrary.org/obo/DOID_DOID_104
+http://purl.obolibrary.org/obo/DOID_DOID_12842
+http://purl.obolibrary.org/obo/DOID_DOID_1398
+http://purl.obolibrary.org/obo/DOID_DOID_1564
+http://purl.obolibrary.org/obo/DOID_DOID_4325
+http://purl.obolibrary.org/obo/DOID_DOID_4327
+http://purl.obolibrary.org/obo/DOID_DOID_574
+http://purl.obolibrary.org/obo/DOID_DOID_649
+http://purl.obolibrary.org/obo/DOID_DOID_934
+
+http://purl.obolibrary.org/obo/DOID_1579 # respiratory system disease
+http://purl.obolibrary.org/obo/DOID_0050161 # lower respiratory tract disease
+
+http://purl.obolibrary.org/obo/DOID_1287 # cardiovascular system disease
+
+http://purl.obolibrary.org/obo/DOID_9471 # meningitis
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease
+http://purl.obolibrary.org/obo/DOID_7 #Disease of anatomical entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+[Source annotation URIs to be excluded]
