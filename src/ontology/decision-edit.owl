@@ -1,32 +1,33 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/decision.owl/"
      xml:base="http://purl.obolibrary.org/obo/decision.owl/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
-     xmlns:resource="http://semanticscience.org/resource/"
-     xmlns:patterns="http://www.co-ode.org/patterns#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/decision.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/decision/releases/2018-02-26/decision.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncit_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/gazetteer_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/obi_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncbitaxon_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/pato_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/hp_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/efo_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/gazetteer_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/general_ontofox.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/hp_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/ncit_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/decision/imports/pato_import.owl"/>
     </owl:Ontology>
     
 
@@ -67,6 +68,16 @@
         <obo:IAO_0000117>Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">user interface help</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-21T19:47:13Z</dc:date>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -116,6 +127,12 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
@@ -373,7 +390,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000000">
         <obo:IAO_0000115 xml:lang="en">This hierarchy is more of a SKOS type concept hierarchy.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">infectious disease research topic</rdfs:label>
+        <rdfs:label xml:lang="en">infectious disease topic</rdfs:label>
     </owl:Class>
     
 
@@ -382,7 +399,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">1. preparedness (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:GENEPIO_0000006 xml:lang="en">1. preparedness</obo:GENEPIO_0000006>
         <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">preparedness (infectious disease topic)</rdfs:label>
@@ -393,8 +410,8 @@
     <!-- http://purl.obolibrary.org/obo/DECISION_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">2. identification (infectious disease topic)</obo:GENEPIO_0000006>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002683"/>
+        <obo:GENEPIO_0000006 xml:lang="en">identification</obo:GENEPIO_0000006>
         <obo:IAO_0000115 xml:lang="en">This topic is focused on methods for determining whether clusters of infectious disease cases have occured, and what pathogen(s) are associated with an outbreak.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">identification (infectious disease topic)</rdfs:label>
@@ -406,7 +423,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">4. treatment (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:GENEPIO_0000006 xml:lang="en">4. treatment</obo:GENEPIO_0000006>
         <obo:IAO_0000115 xml:lang="en">This topic is about helping patients survive and heal from an outbreak of infectious disease.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">treatment (infectious disease topic)</rdfs:label>
@@ -418,7 +435,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">3. prevention (infectious disease topic)</obo:GENEPIO_0000006>
+        <obo:GENEPIO_0000006 xml:lang="en">3. prevention</obo:GENEPIO_0000006>
         <obo:IAO_0000115 xml:lang="en">The infectious disease prevention topic is about reducing or eliminating the pathogen transmission cycle of an outbreak.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">prevention (infectious disease topic)</rdfs:label>
@@ -430,8 +447,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">5. public health response (infectious disease topic)</obo:GENEPIO_0000006>
-        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:GENEPIO_0000006 xml:lang="en">5. public health response</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents ...</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">public health response (infectious disease topic)</rdfs:label>
     </owl:Class>
@@ -442,8 +459,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">6. research response (infectious disease topic)</obo:GENEPIO_0000006>
-        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:GENEPIO_0000006 xml:lang="en">6. research infrastructure</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This ...</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">research response (infectious disease topic)</rdfs:label>
     </owl:Class>
@@ -454,8 +471,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">7. impact (infectious disease topic)</obo:GENEPIO_0000006>
-        <obo:IAO_0000115 xml:lang="en">This section presents research questions involved in assessing infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:GENEPIO_0000006 xml:lang="en">7. impact</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section presents ...</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">impact (infectious disease topic)</rdfs:label>
     </owl:Class>
@@ -466,8 +483,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
-        <obo:GENEPIO_0000006 xml:lang="en">8. debrief (infectious disease topic)</obo:GENEPIO_0000006>
-        <obo:IAO_0000115 xml:lang="en">This section focuses on the assessment of infrastructure, staff, communication and policy measures in advance of an outbreak.</obo:IAO_0000115>
+        <obo:GENEPIO_0000006 xml:lang="en">8. debrief</obo:GENEPIO_0000006>
+        <obo:IAO_0000115 xml:lang="en">This section focuses on post epidemic or pandemic review of research, infrastructure, staff, communication and policy measures.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Damion Dooley</obo:IAO_0000117>
         <rdfs:label xml:lang="en">debrief (infectious disease topic)</rdfs:label>
     </owl:Class>
@@ -551,7 +568,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000103"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17843"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
@@ -1117,6 +1134,17 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002683"/>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-21T19:51:46Z</dc:date>
+        <rdfs:label xml:lang="en">test</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000078">
@@ -1248,15 +1276,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000010"/>
         <rdfs:label xml:lang="en">laboratory testing infectious disease identification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000103">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
-        <rdfs:label xml:lang="en">epidemiologist</rdfs:label>
     </owl:Class>
     
 
@@ -2948,6 +2967,33 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0002683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0002683">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000000"/>
+        <obo:GENEPIO_0000006>infectious disease investigation</obo:GENEPIO_0000006>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-10T04:48:34Z</dc:date>
+        <rdfs:label xml:lang="en">investigation (infectious disease topic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0002684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0002684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002683"/>
+        <obo:GENEPIO_0000006>transmission</obo:GENEPIO_0000006>
+        <obo:IAO_0000112 xml:lang="en">What are the main transmission parameters of SARS-COV-2?</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <obo:IAO_0000118>[transmission process] of [infectious pathogen]?</obo:IAO_0000118>
+        <obo:hasExactSynonym xml:lang="en">transmission modality</obo:hasExactSynonym>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-10T18:39:29Z</dc:date>
+        <rdfs:label xml:lang="en">infectious disease transmission modality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -3117,6 +3163,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17843 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17843">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25190"/>
+        <rdfs:label xml:lang="en">epidemiologist</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C20108 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C20108">
@@ -3136,7 +3191,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCIT_C25174 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25174">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25190"/>
     </rdf:Description>
     
 
@@ -3146,6 +3201,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+    </owl:Class>
     
 
 
@@ -3357,6 +3421,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-21T20:27:29Z</dc:date>
+        <rdfs:label xml:lang="en">transmission process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0000719 -->
 
     <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000719">
@@ -3392,6 +3467,33 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -3413,5 +3515,5 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
