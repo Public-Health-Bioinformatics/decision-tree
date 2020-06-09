@@ -1183,7 +1183,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">What are the main transmission parameters of [SARS-COV-2] ?</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
         <obo:IAO_0000118>[transmission process] of [infectious pathogen]?</obo:IAO_0000118>
         <obo:hasExactSynonym xml:lang="en">transmission modality</obo:hasExactSynonym>
@@ -1199,19 +1198,16 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000072"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000071"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label xml:lang="en">transmission process of [SARS-COV-2] in humans</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">What are the main transmission parameters of [SARS-COV-2] ?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process in humans of [SARS-COV-2]</rdfs:label>
     </owl:Class>
     
 
@@ -1221,6 +1217,27 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <rdfs:label xml:lang="en">human corona virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000072">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-09T18:29:07Z</dc:date>
+        <rdfs:label xml:lang="en">transmission process in human</rdfs:label>
     </owl:Class>
     
 
