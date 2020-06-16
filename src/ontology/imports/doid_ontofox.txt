@@ -27,6 +27,7 @@ http://purl.obolibrary.org/obo/DOID_0050161 # lower respiratory tract disease
 http://purl.obolibrary.org/obo/DOID_1287 # cardiovascular system disease
 
 http://purl.obolibrary.org/obo/DOID_9471 # meningitis
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease
 http://purl.obolibrary.org/obo/DOID_7 #Disease of anatomical entity

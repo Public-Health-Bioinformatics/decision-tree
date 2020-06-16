@@ -197,10 +197,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label xml:lang="en">occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000069 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000069">
         <rdfs:label xml:lang="en">effect on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000073 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000073">
+        <rdfs:label xml:lang="en">affected by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -272,6 +290,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:label>located in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -332,6 +352,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/RO_0002092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/RO_0002092">
+        <rdfs:label xml:lang="en">happens during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/RO_0002451 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/RO_0002451">
@@ -351,6 +379,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
     
 
 
@@ -787,6 +823,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000112>Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">Is the outcome different between treated cases and untreated cases?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">6. treatment regimen efficacy metric</rdfs:label>
     </owl:Class>
@@ -1242,6 +1279,64 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000074">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000075"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001079"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">Do weather conditions influence the transmission of the coronavirus (SARS-COV-2)?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">weather-related transmission process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000075">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">environment-related transmission process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000076">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">transmission process by location</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000078">
@@ -1353,6 +1448,119 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">transmission process by location and PPE usage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <rdfs:label xml:lang="en">personal protective equipment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000089">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">Infection control strategies for preventing the transmission of meticillin-resistant Staphylococcus aureus (MRSA) in nursing homes for older people</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by prevention measures, location and population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000090">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by treatment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000091">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000093"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">What is the evidence for mass gatherings during global pandemics?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by social behaviour process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">need to find a better term for this - intended to include physical distancing, mass gatherings, isolation, etc. -MI</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">social behaviour process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000100">
@@ -1387,6 +1595,14 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 BUT: diseases have phases - through latent/incubation/contagious/ initial / subsequent .  feverish phase / vs. so it would be good to categorize a symptom&apos;s relation to a disease with respect to this.  But reasoner can&apos;t handle that.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">infectious disease symptoms</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_934"/>
+    </rdf:Description>
     
 
 
@@ -1463,6 +1679,18 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
         <rdfs:label xml:lang="en">national geopolitical entity</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001079"/>
     
 
 
@@ -3088,11 +3316,50 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000447 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112>What are the estimated herd immunity levels for SARS-COV-2?</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPATH_0 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_0">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_01c02758_ef4e_4583_a240_50d95a9e46412697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_01c02758_ef4e_4583_a240_50d95a9e46412697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">infection process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_0a488611_5a8d_492f_8b6f_4dfe6ce7d28f2697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_0a488611_5a8d_492f_8b6f_4dfe6ce7d28f2697049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000569"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000072"/>
+        <obo:IAO_0000112>What is the role of pre-symptomatic transmission of SARS-COV-2?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">asymptomatic transmission</rdfs:label>
+    </owl:Class>
     
 
 
@@ -3123,11 +3390,149 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1f6363d8_debe_44e4_95e8_b67c81582e652697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1f6363d8_debe_44e4_95e8_b67c81582e652697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000072"/>
+        <rdfs:label xml:lang="en">symptomatic transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_31884076_36aa_4eae_85c3_66cb5b2e59bf2697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31884076_36aa_4eae_85c3_66cb5b2e59bf2697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <obo:IAO_0000112 xml:lang="en">Rapidly managing pneumonia in older people during a pandemic</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">infectious disease treatment for population by age during outbreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4f1fccdf_f7f5_4865_86d1_a3cec6003b852697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4f1fccdf_f7f5_4865_86d1_a3cec6003b852697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_76311fd5_0c09_4ef0_aeb9_65375a3b841c2697049"/>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus genomic RNA packaging</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">viral genome RNA packaging</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_565995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_565995">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
         <rdfs:label xml:lang="en">Bundibugyo ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_76311fd5_0c09_4ef0_aeb9_65375a3b841c2697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_76311fd5_0c09_4ef0_aeb9_65375a3b841c2697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:label xml:lang="en">viral process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_8ce1e396_1ef9_4a7b_ac36_7e783ead0db92697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_8ce1e396_1ef9_4a7b_ac36_7e783ead0db92697049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000488"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000569"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
+        <obo:IAO_0000112 xml:lang="en">Seroprevalence of IgG antibodies to SARS-coronavirus in asymptomatic or subclinical population groups</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">seroprevalence in asymptomatic population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_c36fbe8f_2442_40ad_8884_135b9818cb462697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_c36fbe8f_2442_40ad_8884_135b9818cb462697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17930"/>
+        <rdfs:label xml:lang="en">immune response to viral infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_d908ced7_985b_4105_823a_4023905c4a372697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_d908ced7_985b_4105_823a_4023905c4a372697049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000488"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
+        <obo:IAO_0000112 xml:lang="en">Immunity by age and gender of people who have had COVID-19 in China, Europe and elsewhere?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">seroprevalence by age, sex and location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_f8298de6_2f5b_4b5a_9198_ec503202cd862697049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_f8298de6_2f5b_4b5a_9198_ec503202cd862697049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000488"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
+        <obo:IAO_0000112 xml:lang="en">seroprevalence [of COVID-19 antibodies] to track country implementation of the WHO master protocol on sero-epi investigations for timely updates of global technical guidance</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">seroprevalence at location</rdfs:label>
     </owl:Class>
     
 
@@ -3239,6 +3644,30 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25190"/>
         <rdfs:label xml:lang="en">epidemiologist</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17930 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17930">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17930"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000098"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_01c02758_ef4e_4583_a240_50d95a9e46412697049"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus infections and immune responses</obo:IAO_0000112>
+    </rdf:Description>
     
 
 
