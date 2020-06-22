@@ -24,9 +24,6 @@
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
@@ -38,6 +35,9 @@
         <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
@@ -54,6 +54,26 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:ObjectProperty>
     
 
 
@@ -127,6 +147,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
@@ -146,6 +177,17 @@
         <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label xml:lang="en">role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
@@ -172,12 +214,118 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002008">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minute solid particles with diameters less than 500 micrometers. Occurs in and may be deposited from, the atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental material</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental condition is a range of a determinate quality or combination of qualities that are present in an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000405">
+        <rdfs:label xml:lang="en">respirable suspended particulate matter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001089"/>
+        <obo:IAO_0000115>A portion of respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of 10 micrometers or less.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000415">
+        <rdfs:label xml:lang="en">fine respirable suspended particulate matter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000405"/>
+        <obo:IAO_0000115>A portion of fine respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of 2.5 micrometers or less.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000416">
+        <rdfs:label xml:lang="en">ultrafine respirable suspended particulate matter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000415"/>
+        <obo:IAO_0000115>A portion of fine respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of  100 nanometers or less.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000831">
+        <rdfs:label xml:lang="en">droplet</rdfs:label>
+        <obo:IAO_0000115>A droplet is a small column of liquid, bounded completely or almost completely by free surfaces which maintains its shape due to the surface tension of the liquid.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000838">
+        <rdfs:label xml:lang="en">smoke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000842 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000842">
+        <rdfs:label xml:lang="en">smog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000844"/>
+        <obo:IAO_0000115>A fog which is intermixed with smoke or other combustion products and their derivatives.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000844">
+        <rdfs:label xml:lang="en">fog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
+        <obo:IAO_0000115>A visible mass of cloud water droplets or ice crystals suspended in the air at or near a planetary surface.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
     
@@ -212,6 +360,105 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
         <obo:IAO_0000115>A condition which inheres in an environmental system by virtue of that system undergoing variation in its composition, the distribution of the qualities its components bear, and/or in the processes which occur within it and which it participates in.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001088">
+        <rdfs:label xml:lang="en">aerosolised liquids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aerosol which has non-gaseous parts that are primarily composed of liquid droplets.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001089">
+        <rdfs:label xml:lang="en">aerosolised solids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aerosol which has non-gaseous parts that are primarily composed of solid particles.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001258">
+        <rdfs:label xml:lang="en">vog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000844"/>
+        <obo:IAO_0000115>A fog which is composed of liquid aerosols and gases derived from volcanic gas emissions (primarily sulfur oxides), formed when sulfur-bearing gases react with sunlight, oxygen, and moisture in an atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001402">
+        <rdfs:label xml:lang="en">haze</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001089"/>
+        <obo:IAO_0000115>An aersolised mass of dust, smoke, or other dry particulates which scatters visible light thus obsscuring  visibility through an atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001458">
+        <rdfs:label xml:lang="en">mist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
+        <obo:IAO_0000115>A visible mass of water droplets or ice crystals suspended in the air at or near a planetary surface, formed when humid air cools rapidly.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000417">
+        <rdfs:label xml:lang="en">infectious agent transporter role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role borne by a material entity in virtue of the fact that an infectious agent is located in or on the entity and the entity has the capability to transfer (either actively or passively) the infectious agent from one location to another. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000421">
+        <rdfs:label xml:lang="en">infectious agent vehicle role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000417"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious agent transporter role borne by an entity in virtue of the fact that the entity is not a complete organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000422">
+        <rdfs:label xml:lang="en">biological vehicle of infectious agent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000421"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious agent vehicle role borne by an entity in virtue of the fact that the entity is living or contains living cells other than those that have the infectious disposition.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000423">
+        <rdfs:label xml:lang="en">fomite role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000421"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious agent vehicle role borne by an entity in virtue of the fact that the entity is not alive.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
 
@@ -362,6 +609,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000543">
+        <rdfs:label xml:lang="en">vehicle of infectious agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity bearing an infectious agent vehicle role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000569">
@@ -395,6 +653,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11137">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus 229E</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1335626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1335626">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East respiratory syndrome-related coronavirus</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
@@ -402,6 +678,210 @@
         <rdfs:label>SARS-CoV-2</rdfs:label>
         <obo:IAO_0000118>Wuhan coronavirus</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">Wuhan seafood market pneumonia virus</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_277944 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_277944">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NL63</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_290028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_290028">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus HKU1</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_308726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_308726">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus type 5</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_31631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31631">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus OC43</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384335">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384336">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1055/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384337">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0003/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384338">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0749/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384339">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0848/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384340">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1917/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384341">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0835/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384342">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0341/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384343">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0053/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384344">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0398/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384345">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0023/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384346">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0193/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384347">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/2708/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384348">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0733/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384349">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0643/05</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_384350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384350">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0867/04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_694009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_694009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Severe acute respiratory syndrome-related coronavirus</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
     </owl:Class>
     
@@ -776,6 +1256,9 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arachnid borne transmission is an arthropod vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary arthropod vector such as a tick to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
     </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
