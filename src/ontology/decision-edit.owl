@@ -1682,9 +1682,41 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002008 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00002008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010505 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000831 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+    </rdf:Description>
     
 
 
@@ -3539,6 +3571,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_c36fbe8f_2442_40ad_8884_135b9818cb462697049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17930"/>
         <obo:IAO_0000112 xml:lang="en">COVID-19, cytokines and immunosuppression: what can we learn from severe acute respiratory syndrome?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus infections and immune responses</obo:IAO_0000112>
         <rdfs:label xml:lang="en">immune response to viral infection</rdfs:label>
     </owl:Class>
     
@@ -3731,7 +3764,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000112 xml:lang="en">Coronavirus infections and immune responses</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
     </rdf:Description>
     
 
@@ -4002,6 +4035,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000714"/>
+        <obo:IAO_0000112 xml:lang="en">What is the survival time of SARS-COV-2 as an airborne aerosol?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">infectious agent survival time in environment</rdfs:label>
     </owl:Class>
     
