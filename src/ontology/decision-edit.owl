@@ -1330,6 +1330,51 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000077">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000063"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
+ (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
+        <rdfs:comment xml:lang="en">change &apos;medical specialty role&apos; to more generic &apos;professional role&apos; once &apos;professional role&apos; is imported</rdfs:comment>
+        <rdfs:label xml:lang="en">transmission process by population and PPE usage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000078">
@@ -1554,6 +1599,37 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000714"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000714"/>
+        <obo:IAO_0000112 xml:lang="en">What is the survival time of SARS-COV-2 as an airborne aerosol?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">infectious agent survival time in environment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000100">
@@ -1574,6 +1650,16 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000010"/>
         <rdfs:label xml:lang="en">laboratory testing infectious disease identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_76311fd5_0c09_4ef0_aeb9_65375a3b841c2697049"/>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus genomic RNA packaging</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">viral genome RNA packaging</rdfs:label>
     </owl:Class>
     
 
@@ -3506,16 +3592,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4f1fccdf_f7f5_4865_86d1_a3cec6003b852697049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4f1fccdf_f7f5_4865_86d1_a3cec6003b852697049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_76311fd5_0c09_4ef0_aeb9_65375a3b841c2697049"/>
-        <obo:IAO_0000112 xml:lang="en">Coronavirus genomic RNA packaging</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">viral genome RNA packaging</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_565995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_565995">
@@ -4008,82 +4084,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_067d925e_a7a1_475f_b6a6_adfe20d159810002092 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_067d925e_a7a1_475f_b6a6_adfe20d159810002092">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000063"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
- (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
-        <rdfs:comment xml:lang="en">change &apos;medical specialty role&apos; to more generic &apos;professional role&apos; once &apos;professional role&apos; is imported</rdfs:comment>
-        <rdfs:label xml:lang="en">transmission process by population and PPE usage</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_af52161a_92a4_4f37_9860_b6c6ecb1271d0002092 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_af52161a_92a4_4f37_9860_b6c6ecb1271d0002092">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000714"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000925"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000714"/>
-        <obo:IAO_0000112 xml:lang="en">What is the survival time of SARS-COV-2 as an airborne aerosol?</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">infectious agent survival time in environment</rdfs:label>
-    </owl:Class>
     
 
 
