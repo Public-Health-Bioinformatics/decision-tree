@@ -823,6 +823,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">HF nasal cannulation</obo:IAO_0000112>
         <obo:IAO_0000112>Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">Is the outcome different between treated cases and untreated cases?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">6. treatment regimen efficacy metric</rdfs:label>
@@ -1154,6 +1155,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">Does overweight/obesity increase the risk of severe disease or death?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">What are the risk factors of progression to poor outcome?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">1.2 [infectious disease] risk factor</rdfs:label>
     </owl:Class>
@@ -1238,22 +1240,13 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000072"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000071"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000112 xml:lang="en">What are the main transmission parameters of [SARS-COV-2] ?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process in humans of [SARS-COV-2]</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000071 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-        <rdfs:label xml:lang="en">human corona virus</rdfs:label>
     </owl:Class>
     
 
@@ -3395,10 +3388,18 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11137 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11137">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3406,7 +3407,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1335626 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1335626">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3450,7 +3451,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3458,7 +3459,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_277944 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_277944">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3466,7 +3467,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_290028 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_290028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3474,7 +3475,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_308726 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_308726">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3482,7 +3483,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_31631 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31631">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3500,7 +3501,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384335 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384335">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -3527,7 +3528,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_694009 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_694009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11118"/>
     </rdf:Description>
     
 
@@ -4007,6 +4008,51 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_067d925e_a7a1_475f_b6a6_adfe20d159810002092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_067d925e_a7a1_475f_b6a6_adfe20d159810002092">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000063"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
+ (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
+        <rdfs:comment xml:lang="en">change &apos;medical specialty role&apos; to more generic &apos;professional role&apos; once &apos;professional role&apos; is imported</rdfs:comment>
+        <rdfs:label xml:lang="en">transmission process by population and PPE usage</rdfs:label>
+    </owl:Class>
     
 
 
