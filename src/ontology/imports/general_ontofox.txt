@@ -320,6 +320,7 @@ http://purl.obolibrary.org/obo/PATO_0015024 #increased porosity
 http://purl.obolibrary.org/obo/PATO_0015025 #decreased porosity
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -364,9 +365,10 @@ PATO
 http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
