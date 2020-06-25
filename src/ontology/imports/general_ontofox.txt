@@ -313,7 +313,7 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source ontology]
-CIDO
+PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0015024 #increased porosity
