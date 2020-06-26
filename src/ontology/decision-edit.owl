@@ -1251,6 +1251,26 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000071">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000544"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0015024"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000544"/>
+        <rdfs:label xml:lang="en">fomite with increased porosity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000072">
@@ -1755,6 +1775,26 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label xml:lang="en">concentration of virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000107">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000544"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0015025"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000544"/>
+        <rdfs:label xml:lang="en">fomite with decreased porosity</rdfs:label>
     </owl:Class>
     
 
