@@ -1799,6 +1799,52 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <rdfs:comment>From Rhiannon&apos;s COVID-19 Vocabulary sheet.  Where available, URIs are for ontology entries for the protein product of each gene.  Term labels are the gene names, with the sheet&apos;s alternate labels in parentheses as alternative terms here.</rdfs:comment>
+        <rdfs:label xml:lang="en">SARS-CoV-2 genes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000108"/>
+        <rdfs:label xml:lang="en">gene name 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF3b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF9c</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF14</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
@@ -4214,6 +4260,279 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_P0DTC1-1"/>
+        <rdfs:label xml:lang="en">nsp11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>rep</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">ORF1ab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <obo:IAO_0000118>RdRp</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">nsp12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <obo:IAO_0000118>Hel</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">nsp13</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <obo:IAO_0000118>ExoN</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">nsp14</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000050288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000050288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <rdfs:label xml:lang="en">nsp16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_A0A663DJA2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_A0A663DJA2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC1-1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC1-1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000050281"/>
+        <obo:IAO_0000118>pp1a</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">ORF1a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>orf2</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Spike</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF3a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>orf4</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC5 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC5">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>orf5</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">M</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC6 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC6">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>ns6</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">ORF6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF7a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>ns8</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">ORF8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTC9 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTC9">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>orf9</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">N</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTD2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTD2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <rdfs:label xml:lang="en">ORF9b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P0DTD8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P0DTD8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
+        <obo:IAO_0000118>ns7b</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">ORF7b</rdfs:label>
+    </owl:Class>
     
 
 
