@@ -1351,7 +1351,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                                             </owl:Restriction>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17153"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25193"/>
                                             </owl:Restriction>
                                         </owl:unionOf>
                                     </owl:Class>
@@ -1369,7 +1369,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
  (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
-        <rdfs:comment xml:lang="en">change &apos;medical specialty role&apos; to more generic &apos;professional role&apos; once &apos;professional role&apos; is imported</rdfs:comment>
         <rdfs:label xml:lang="en">transmission process by population and PPE usage</rdfs:label>
     </owl:Class>
     
@@ -1599,6 +1598,30 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000095">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000095"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000106"/>
+        <rdfs:label xml:lang="en">concentration of virus in material entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000096">
@@ -1664,6 +1687,15 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:label xml:lang="en">survival process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000104">
@@ -1673,6 +1705,56 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
 BUT: diseases have phases - through latent/incubation/contagious/ initial / subsequent .  feverish phase / vs. so it would be good to categorize a symptom&apos;s relation to a disease with respect to this.  But reasoner can&apos;t handle that.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">infectious disease symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000105">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000103"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>see also &quot;infectious agent survival time in environment&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">survival process in environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000106">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label xml:lang="en">concentration of virus</rdfs:label>
     </owl:Class>
     
 
@@ -3891,6 +3973,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25193 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
     </rdf:Description>
     
 

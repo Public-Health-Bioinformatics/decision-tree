@@ -310,3 +310,71 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source annotation URIs to be excluded]
+
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0015024 #increased porosity
+http://purl.obolibrary.org/obo/PATO_0015025 #decreased porosity
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C25193 #occupation
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
