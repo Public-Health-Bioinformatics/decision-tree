@@ -3719,6 +3719,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDOMAL_0001255 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDOMAL_0001255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000447 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000447">
