@@ -825,6 +825,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
         <obo:IAO_0000112 xml:lang="en">HF nasal cannulation</obo:IAO_0000112>
         <obo:IAO_0000112>Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What are the optimal strategies to offer supportive care to those with COVID-19 disease?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">Is the outcome different between treated cases and untreated cases?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">6. treatment regimen efficacy metric</rdfs:label>
     </owl:Class>
@@ -4083,6 +4084,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15747 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C15747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C16084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16084">
@@ -4397,6 +4406,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000114 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <obo:IAO_0000112 xml:lang="en">Advances in the research of cytokine storm mechanism induced by Corona Virus Disease 2019 and the corresponding immunotherapies</obo:IAO_0000112>
     </rdf:Description>
     
 
@@ -4849,9 +4867,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
-        <obo:IAO_0000112 xml:lang="en">Advances in the research of cytokine storm mechanism induced by Corona Virus Disease 2019 and the corresponding immunotherapies</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000007">
         <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>

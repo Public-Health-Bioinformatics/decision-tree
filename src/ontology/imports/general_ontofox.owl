@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/decision/imports/general_ontofox.owl#"
      xml:base="http://purl.obolibrary.org/obo/decision/imports/general_ontofox.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/decision/imports/general_ontofox.owl"/>
     
 
@@ -18,42 +19,54 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label>alternative term</rdfs:label>
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
-        <rdfs:label>textual definition</rdfs:label>
-        <rdfs:label>definition</rdfs:label>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
-        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:label>label</rdfs:label>
-        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <rdfs:label>alternative term</rdfs:label>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -91,10 +104,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:label xml:lang="en">entity</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
     </owl:Class>
     
 
@@ -102,12 +115,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
     
 
@@ -115,10 +128,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
-        <rdfs:label xml:lang="en">occurrent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">occurrent</rdfs:label>
     </owl:Class>
     
 
@@ -126,12 +139,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
-        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </owl:Class>
     
 
@@ -139,12 +152,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
-        <rdfs:label xml:lang="en">process</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     
 
@@ -152,10 +165,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
     </owl:Class>
     
 
@@ -163,10 +176,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
-        <rdfs:label xml:lang="en">quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
     
 
@@ -174,7 +187,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
@@ -182,6 +194,7 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
     </owl:Class>
     
 
@@ -189,10 +202,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
-        <rdfs:label xml:lang="en">role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:IAO_0000115 xml:lang="en">A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">role</rdfs:label>
     </owl:Class>
     
 
@@ -200,10 +213,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
-        <rdfs:label xml:lang="en">fiat object</rdfs:label>
-        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">fiat object</rdfs:label>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
     </owl:Class>
     
 
@@ -211,9 +224,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
-        <rdfs:label xml:lang="en">object aggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">object aggregate</rdfs:label>
     </owl:Class>
     
 
@@ -221,11 +234,11 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:label xml:lang="en">material entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     
 
@@ -233,9 +246,9 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
     </owl:Class>
     
 
@@ -243,10 +256,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000338">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vomit material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of vomit, a bodily fluid consisting of the expulsed contents of the stomach of an organism disgorged through the mouth or nose.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vomit material</rdfs:label>
     </owl:Class>
     
 
@@ -254,10 +267,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fecal material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&#39;s digestive tract through the anus (or cloaca) during defecation.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&apos;s digestive tract through the anus (or cloaca) during defecation.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fecal material</rdfs:label>
     </owl:Class>
     
 
@@ -265,9 +278,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minute solid particles with diameters less than 500 micrometers. Occurs in and may be deposited from, the atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
     </owl:Class>
     
 
@@ -275,10 +288,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of urine, a liquid excreta containing water and waste products made by the kidneys, stored in the bladder, and leaves the body through the urethra.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine material</rdfs:label>
     </owl:Class>
     
 
@@ -286,10 +299,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002264 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002264">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waste material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <obo:IAO_0000115>A material which is not the desired output of a process and which is typically the input of a process which removes it from its producer (e.g. a disposal process).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waste material</rdfs:label>
     </owl:Class>
     
 
@@ -297,12 +310,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental material</rdfs:label>
     </owl:Class>
     
 
@@ -310,9 +323,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00010505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol</rdfs:label>
     </owl:Class>
     
 
@@ -320,10 +333,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental material derived from living organisms and composed primarily of one or more biomacromolecules.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic material</rdfs:label>
     </owl:Class>
     
 
@@ -331,10 +344,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental condition is a range of a determinate quality or combination of qualities that are present in an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental condition</rdfs:label>
     </owl:Class>
     
 
@@ -342,10 +355,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000405 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000405">
-        <rdfs:label xml:lang="en">respirable suspended particulate matter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001089"/>
         <obo:IAO_0000115>A portion of respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of 10 micrometers or less.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">respirable suspended particulate matter</rdfs:label>
     </owl:Class>
     
 
@@ -353,10 +366,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000415">
-        <rdfs:label xml:lang="en">fine respirable suspended particulate matter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000405"/>
         <obo:IAO_0000115>A portion of fine respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of 2.5 micrometers or less.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">fine respirable suspended particulate matter</rdfs:label>
     </owl:Class>
     
 
@@ -364,10 +377,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000416 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000416">
-        <rdfs:label xml:lang="en">ultrafine respirable suspended particulate matter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000415"/>
         <obo:IAO_0000115>A portion of fine respirable suspended particulate matter is a form of particulate matter composed primarily of solid particles each with a diameter of  100 nanometers or less.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">ultrafine respirable suspended particulate matter</rdfs:label>
     </owl:Class>
     
 
@@ -375,9 +388,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000831">
-        <rdfs:label xml:lang="en">droplet</rdfs:label>
         <obo:IAO_0000115>A droplet is a small column of liquid, bounded completely or almost completely by free surfaces which maintains its shape due to the surface tension of the liquid.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">droplet</rdfs:label>
     </owl:Class>
     
 
@@ -385,9 +398,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000838 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000838">
-        <rdfs:label xml:lang="en">smoke</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">smoke</rdfs:label>
     </owl:Class>
     
 
@@ -395,10 +408,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000842 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000842">
-        <rdfs:label xml:lang="en">smog</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000844"/>
         <obo:IAO_0000115>A fog which is intermixed with smoke or other combustion products and their derivatives.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">smog</rdfs:label>
     </owl:Class>
     
 
@@ -406,10 +419,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000844 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000844">
-        <rdfs:label xml:lang="en">fog</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
         <obo:IAO_0000115>A visible mass of cloud water droplets or ice crystals suspended in the air at or near a planetary surface.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">fog</rdfs:label>
     </owl:Class>
     
 
@@ -417,10 +430,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001078">
-        <rdfs:label xml:lang="en">weather</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001081"/>
         <obo:IAO_0000115>Environmental variability which inheres in an astronomical body part or in outer space.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">weather</rdfs:label>
     </owl:Class>
     
 
@@ -428,10 +441,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001079">
-        <rdfs:label xml:lang="en">atmospheric weather</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001078"/>
         <obo:IAO_0000115>Weather which inheres in an atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">atmospheric weather</rdfs:label>
     </owl:Class>
     
 
@@ -439,10 +452,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001081">
-        <rdfs:label xml:lang="en">environmental variability</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
         <obo:IAO_0000115>A condition which inheres in an environmental system by virtue of that system undergoing variation in its composition, the distribution of the qualities its components bear, and/or in the processes which occur within it and which it participates in.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">environmental variability</rdfs:label>
     </owl:Class>
     
 
@@ -450,10 +463,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001088">
-        <rdfs:label xml:lang="en">aerosolised liquids</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aerosol which has non-gaseous parts that are primarily composed of liquid droplets.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">aerosolised liquids</rdfs:label>
     </owl:Class>
     
 
@@ -461,10 +474,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001089">
-        <rdfs:label xml:lang="en">aerosolised solids</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aerosol which has non-gaseous parts that are primarily composed of solid particles.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">aerosolised solids</rdfs:label>
     </owl:Class>
     
 
@@ -472,10 +485,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001258">
-        <rdfs:label xml:lang="en">vog</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000844"/>
         <obo:IAO_0000115>A fog which is composed of liquid aerosols and gases derived from volcanic gas emissions (primarily sulfur oxides), formed when sulfur-bearing gases react with sunlight, oxygen, and moisture in an atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">vog</rdfs:label>
     </owl:Class>
     
 
@@ -483,10 +496,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001402 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001402">
-        <rdfs:label xml:lang="en">haze</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001089"/>
         <obo:IAO_0000115>An aersolised mass of dust, smoke, or other dry particulates which scatters visible light thus obsscuring  visibility through an atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">haze</rdfs:label>
     </owl:Class>
     
 
@@ -494,10 +507,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001458 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001458">
-        <rdfs:label xml:lang="en">mist</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
         <obo:IAO_0000115>A visible mass of water droplets or ice crystals suspended in the air at or near a planetary surface, formed when humid air cools rapidly.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">mist</rdfs:label>
     </owl:Class>
     
 
@@ -505,10 +518,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily fluid material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000155"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organic material which is primarily composed of some natural bodily fluid or secretion such as blood, semen, saliva, blood plasma, intracellular and interstitial fluids.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily fluid material</rdfs:label>
     </owl:Class>
     
 
@@ -516,10 +529,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of blood, a bodily fluid composed of blood plasma and blood cells suspended within the plasma that circulates around the organism&#39;s body. Blood performs may important functions including the supplying of oxygen and nutrients, removal of waste, circulation of white blood cells, detection of antibodes, coagulation, transportation of antibodies and the regulation of pH and body temperature.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of blood, a bodily fluid composed of blood plasma and blood cells suspended within the plasma that circulates around the organism&apos;s body. Blood performs may important functions including the supplying of oxygen and nutrients, removal of waste, circulation of white blood cells, detection of antibodes, coagulation, transportation of antibodies and the regulation of pH and body temperature.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood material</rdfs:label>
     </owl:Class>
     
 
@@ -527,10 +540,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amniotic fluid material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of amniotic fluid, a bodily fluid consisting of watery liquid surrounding and cushioning a growing fetus within the amnion. It allows the fetus to move freely without the walls of the uterus being too tight against its body. Buoyancy is also provided.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amniotic fluid material</rdfs:label>
     </owl:Class>
     
 
@@ -538,11 +551,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excreta material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002264"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of excreta, bodily fluids consisting of matter which contains the waste products of biological processes, including urine or feces, discharged from an organism&#39;s body.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of excreta, bodily fluids consisting of matter which contains the waste products of biological processes, including urine or feces, discharged from an organism&apos;s body.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excreta material</rdfs:label>
     </owl:Class>
     
 
@@ -550,10 +563,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bile material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of bile, a bodily fluid consisting of a bitter, yellow or green alkaline fluid secreted by hepatocytes from the liver of most vertebrates. In many species, bile is stored in the gallbladder between meals and upon eating is discharged into the duodenum where the bile aids the process of digestion of lipids.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bile material</rdfs:label>
     </owl:Class>
     
 
@@ -561,10 +574,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aqueous humour material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of aqueous humour, a bodily fluid consisting of a thick watery substance that fills the space between the lens and the cornea.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aqueous humour material</rdfs:label>
     </owl:Class>
     
 
@@ -572,10 +585,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweat material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of sweat, an excreta consisting primarily of water as well as a smaller amount of sodium chloride that is excreted by the sweat glands in the skin of mammals.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweat material</rdfs:label>
     </owl:Class>
     
 
@@ -583,10 +596,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyme material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of chyme, a bodily fluid consisting of a liquid substance found in the stomach before passing through the pyloric valve and entering the duodenum. It results from the mechanical and chemical breakdown of a bolus and consists of partially digested food, water, hydrochloric acid, and various digestive enzymes.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyme material</rdfs:label>
     </owl:Class>
     
 
@@ -594,10 +607,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood plasma material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of blood plasma, a bodily fluid that comprises the liquid component of blood, in which the blood cells are suspended. It makes up about 55% of total blood volume.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood plasma material</rdfs:label>
     </owl:Class>
     
 
@@ -605,10 +618,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000028">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ear wax material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of ear wax, a bodily fluid consisting of a yellowish, waxy substance secreted in the ear canal of humans and many other mammals. It plays an important role in the human ear canal, assisting in cleaning and lubrication, and also provides some protection from bacteria, fungi, and insects.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ear wax material</rdfs:label>
     </owl:Class>
     
 
@@ -616,10 +629,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000029">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebrospinal fluid material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of cerebrospinal fluid, a clear bodily fluid that occupies the subarachnoid space and the ventricular system around and inside the brain. CSF is a clear bodily fluid that occupies the subarachnoid space and the ventricular system around and inside the brain.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebrospinal fluid material</rdfs:label>
     </owl:Class>
     
 
@@ -627,10 +640,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000030">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyle material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of chyle, a bodily fluid consisting of a milky fluid consisting of lymph and emulsified fats; formed in the small intestine during digestion of ingested fats.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyle material</rdfs:label>
     </owl:Class>
     
 
@@ -638,10 +651,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000031">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breast milk material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of breast milk, is a bodily fluid produced that is secreted from two milk-secreting glandular organs on a female&#39;s chest.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of breast milk, is a bodily fluid produced that is secreted from two milk-secreting glandular organs on a female&apos;s chest.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breast milk material</rdfs:label>
     </owl:Class>
     
 
@@ -649,10 +662,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000032">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitreous humor material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of vitreous humor, a bodily fluid consisting of a clear gel that fills the space between the lens and the retina of the eyeball of humans and other vertebrates.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitreous humor material</rdfs:label>
     </owl:Class>
     
 
@@ -660,10 +673,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleural effusion material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of a pleural effusion, a bodily fluid that is produced in excess and accumulates in the pleural cavity, the fluid-filled space that surrounds the lungs. Excessive amounts of such fluid can impair breathing by limiting the expansion of the lungs during inhalation.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleural effusion material</rdfs:label>
     </owl:Class>
     
 
@@ -671,10 +684,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tear material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of a volume of tears, a bodily fluid consisting of a drop of the clear salty liquid secreted by glands (lacrimal glands) in the eyes. Tears wet the membrane covering the eye and help rid the eye of irritating substances.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tear material</rdfs:label>
     </owl:Class>
     
 
@@ -682,10 +695,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000035">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oronasal secretion material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of an oronasal secretion, a bodily fluid secreted from the body via the mouth or nose.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oronasal secretion material</rdfs:label>
     </owl:Class>
     
 
@@ -693,10 +706,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saliva material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of saliva, a slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme (as ptyalin) that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saliva material</rdfs:label>
     </owl:Class>
     
 
@@ -704,10 +717,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000037">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebum material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of sebum, an oily bodily fluid secreted from the sebaceous glads that is made of fat (lipids) and the debris of dead fat-producing cells. In the glands, sebum is produced within specialized cells and is released as these cells burst. Sebum acts to protect and waterproof hair and skin, and keep them from becoming dry, brittle and cracked. It can also inhibit the growth of microorganisms on skin.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebum material</rdfs:label>
     </owl:Class>
     
 
@@ -715,10 +728,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000038">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pus material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of pus, a bodily fluid consisting of a whitish-yellow or yellow substance produced during inflammatory responses of the body that can be found in regions of pyogenic bacterial infections. Pus is produced from the dead and living cells which travel into the intercellular spaces around the affected cells.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pus material</rdfs:label>
     </owl:Class>
     
 
@@ -726,10 +739,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000039">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synovial fluid material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of synovial fluid, a bodily fluid secreted by the synovial membrane into the joint cavity to form a thin layer at the surface of cartilage.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synovial fluid material</rdfs:label>
     </owl:Class>
     
 
@@ -737,10 +750,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000040">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucus material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of mucus, a bodily fluid consisting of a slippery secretion of the lining of the mucous membranes in the body. It is a viscous colloid containing antiseptic enzymes (such as lysozyme) and immunoglobulins. Mucus is produced by goblet cells in the mucous membranes that cover the surfaces of the membranes. It is made up of mucins and inorganic salts suspended in water.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucus material</rdfs:label>
     </owl:Class>
     
 
@@ -748,10 +761,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000041">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymph material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of lymph, a bodily fluid consisting of a usually clear coagulable fluid that passes from intercellular spaces of body tissue into the lymphatic vessels, is discharged into the blood by way of the thoracic duct and right lymphatic duct, and resembles blood plasma in containing white blood cells and especially lymphocytes but normally few red blood cells and no platelets.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymph material</rdfs:label>
     </owl:Class>
     
 
@@ -759,10 +772,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000042 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000042">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial fluid material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of interstitial fluid, a bodily fluid consisting of a solution which bathes and surrounds the cells of multicellular animals. It is the main component of the extracellular fluid, which also includes plasma and transcellular fluid.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial fluid material</rdfs:label>
     </owl:Class>
     
 
@@ -770,9 +783,9 @@
     <!-- http://purl.obolibrary.org/obo/IDOMAL_0001255 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDOMAL_0001255">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human population</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population of human beings.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/idomal.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human population</rdfs:label>
     </owl:Class>
     
 
@@ -780,10 +793,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000417 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000417">
-        <rdfs:label xml:lang="en">infectious agent transporter role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 xml:lang="en">A role borne by a material entity in virtue of the fact that an infectious agent is located in or on the entity and the entity has the capability to transfer (either actively or passively) the infectious agent from one location to another. </obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious agent transporter role</rdfs:label>
     </owl:Class>
     
 
@@ -791,10 +804,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000421 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000421">
-        <rdfs:label xml:lang="en">infectious agent vehicle role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000417"/>
         <obo:IAO_0000115 xml:lang="en">An infectious agent transporter role borne by an entity in virtue of the fact that the entity is not a complete organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious agent vehicle role</rdfs:label>
     </owl:Class>
     
 
@@ -802,10 +815,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000422 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000422">
-        <rdfs:label xml:lang="en">biological vehicle of infectious agent role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000421"/>
         <obo:IAO_0000115 xml:lang="en">An infectious agent vehicle role borne by an entity in virtue of the fact that the entity is living or contains living cells other than those that have the infectious disposition.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">biological vehicle of infectious agent role</rdfs:label>
     </owl:Class>
     
 
@@ -813,10 +826,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000423 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000423">
-        <rdfs:label xml:lang="en">fomite role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000421"/>
         <obo:IAO_0000115 xml:lang="en">An infectious agent vehicle role borne by an entity in virtue of the fact that the entity is not alive.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">fomite role</rdfs:label>
     </owl:Class>
     
 
@@ -824,9 +837,9 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000447 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000447">
-        <rdfs:label xml:lang="en">herd immunity to infectious organism</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A collective resistance disposition that inheres in an organism population in virtue of the fact that the proportion of the population with immunity to an infectious agent is high resulting in a low number of transmissions from hosts in the population to susceptible individuals in the population and thereby mitigating the damaging effects of the infectious agent on the population.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">herd immunity to infectious organism</rdfs:label>
     </owl:Class>
     
 
@@ -834,10 +847,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:label xml:lang="en">infectious agent seroprevalence</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious agent seroprevalence</rdfs:label>
     </owl:Class>
     
 
@@ -845,11 +858,11 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000502">
-        <rdfs:label xml:lang="en">infectious disease epidemic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process of infectious disease realizations and for which there is a statistically significant increase in the infectious disease incidence of a population.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">infectious disease outbreak</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious disease epidemic</rdfs:label>
     </owl:Class>
     
 
@@ -857,10 +870,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000503 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000503">
-        <rdfs:label xml:lang="en">infectious disease pandemic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process in which multiple infectious disease epidemics of the same type of infectious disease unfold over overlapping periods of time and affect organism populations located in different geographic regions, including different countries and continents.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious disease pandemic</rdfs:label>
     </owl:Class>
     
 
@@ -868,10 +881,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000509 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
-        <rdfs:label xml:lang="en">organism population</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of organisms of the same Species.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">organism population</rdfs:label>
     </owl:Class>
     
 
@@ -879,10 +892,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000511 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000511">
-        <rdfs:label xml:lang="en">infected population</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
         <obo:IAO_0000115 xml:lang="en">An organism population whose members have an infection.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infected population</rdfs:label>
     </owl:Class>
     
 
@@ -890,10 +903,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000531 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000531">
-        <rdfs:label xml:lang="en">host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a host role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">host</rdfs:label>
     </owl:Class>
     
 
@@ -901,11 +914,11 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000532">
-        <rdfs:label xml:lang="en">definitive host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a definitive host role.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">primary host</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">definitive host</rdfs:label>
     </owl:Class>
     
 
@@ -913,11 +926,11 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000533 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000533">
-        <rdfs:label xml:lang="en">intermediate host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">A organism bearing an intermediate host role.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">secondary host</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">intermediate host</rdfs:label>
     </owl:Class>
     
 
@@ -925,10 +938,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000534 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000534">
-        <rdfs:label xml:lang="en">paratenic host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a paratenic host role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">paratenic host</rdfs:label>
     </owl:Class>
     
 
@@ -936,11 +949,11 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000535 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000535">
-        <rdfs:label xml:lang="en">dead-end host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a dead-end host role.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">incidental host</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">dead-end host</rdfs:label>
     </owl:Class>
     
 
@@ -948,10 +961,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000536 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000536">
-        <rdfs:label xml:lang="en">parasite host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a parasite host role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">parasite host</rdfs:label>
     </owl:Class>
     
 
@@ -959,10 +972,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000537 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000537">
-        <rdfs:label xml:lang="en">infectious agent host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000538"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing an infectious agent host role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious agent host</rdfs:label>
     </owl:Class>
     
 
@@ -970,10 +983,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000538 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000538">
-        <rdfs:label xml:lang="en">pathogen host</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing a pathogen host role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">pathogen host</rdfs:label>
     </owl:Class>
     
 
@@ -981,10 +994,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000539 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000539">
-        <rdfs:label xml:lang="en">infectious agent carrier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
         <obo:IAO_0000115 xml:lang="en">An organism bearing the infectious agent carrier role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">infectious agent carrier</rdfs:label>
     </owl:Class>
     
 
@@ -992,10 +1005,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000543 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000543">
-        <rdfs:label xml:lang="en">vehicle of infectious agent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A material entity bearing an infectious agent vehicle role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">vehicle of infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -1003,10 +1016,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000544">
-        <rdfs:label xml:lang="en">fomite</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
         <obo:IAO_0000115 xml:lang="en">A material entity bearing a fomite role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">fomite</rdfs:label>
     </owl:Class>
     
 
@@ -1014,10 +1027,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000569">
-        <rdfs:label xml:lang="en">asymptomatic host of infectious agent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
         <obo:IAO_0000115 xml:lang="en">An organism that is host to an infectious agent and has no symptoms of the infectious disease associated with the infectious agent.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">asymptomatic host of infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -1025,10 +1038,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000572">
-        <rdfs:label xml:lang="en">chronic carrier of infectious agent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000539"/>
         <obo:IAO_0000115 xml:lang="en">An organism who has been bearer of the infectious agent carrier role for an extended period of time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">chronic carrier of infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -1036,10 +1049,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000573 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000573">
-        <rdfs:label xml:lang="en">symptomatic host of infectious agent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
         <obo:IAO_0000115 xml:lang="en">An organism who is host to an infectious agent and has symptoms of the infectious disease associated with the infectious agent</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">symptomatic host of infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -1047,10 +1060,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000592 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000592">
-        <rdfs:label xml:lang="en">immune population</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
         <obo:IAO_0000115 xml:lang="en">An organism population whose members have acquired immunity to an infectious agent.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">immune population</rdfs:label>
     </owl:Class>
     
 
@@ -1058,8 +1071,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11118">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronaviridae</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronaviridae</rdfs:label>
     </owl:Class>
     
 
@@ -1067,8 +1080,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11137 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11137">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus 229E</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus 229E</rdfs:label>
     </owl:Class>
     
 
@@ -1076,8 +1089,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1335626 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1335626">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East respiratory syndrome-related coronavirus</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East respiratory syndrome-related coronavirus</rdfs:label>
     </owl:Class>
     
 
@@ -1085,11 +1098,11 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome coronavirus 2</rdfs:label>
-        <rdfs:label>SARS-CoV-2</rdfs:label>
         <obo:IAO_0000118>Wuhan coronavirus</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">Wuhan seafood market pneumonia virus</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label>SARS-CoV-2</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome coronavirus 2</rdfs:label>
     </owl:Class>
     
 
@@ -1097,8 +1110,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_277944 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_277944">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NL63</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NL63</rdfs:label>
     </owl:Class>
     
 
@@ -1106,8 +1119,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_290028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_290028">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus HKU1</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus HKU1</rdfs:label>
     </owl:Class>
     
 
@@ -1115,8 +1128,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_308726 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_308726">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus type 5</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus type 5</rdfs:label>
     </owl:Class>
     
 
@@ -1124,8 +1137,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_31631 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31631">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus OC43</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus OC43</rdfs:label>
     </owl:Class>
     
 
@@ -1133,8 +1146,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384335">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO</rdfs:label>
     </owl:Class>
     
 
@@ -1142,9 +1155,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384336 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384336">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1055/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1055/04</rdfs:label>
     </owl:Class>
     
 
@@ -1152,9 +1165,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384337 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384337">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0003/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0003/05</rdfs:label>
     </owl:Class>
     
 
@@ -1162,9 +1175,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384338">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0749/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0749/04</rdfs:label>
     </owl:Class>
     
 
@@ -1172,9 +1185,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384339">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0848/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0848/04</rdfs:label>
     </owl:Class>
     
 
@@ -1182,9 +1195,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384340 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384340">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1917/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/1917/04</rdfs:label>
     </owl:Class>
     
 
@@ -1192,9 +1205,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384341">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0835/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0835/04</rdfs:label>
     </owl:Class>
     
 
@@ -1202,9 +1215,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384342">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0341/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0341/04</rdfs:label>
     </owl:Class>
     
 
@@ -1212,9 +1225,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384343">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0053/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0053/04</rdfs:label>
     </owl:Class>
     
 
@@ -1222,9 +1235,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384344">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0398/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0398/05</rdfs:label>
     </owl:Class>
     
 
@@ -1232,9 +1245,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384345 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384345">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0023/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0023/05</rdfs:label>
     </owl:Class>
     
 
@@ -1242,9 +1255,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384346 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384346">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0193/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0193/05</rdfs:label>
     </owl:Class>
     
 
@@ -1252,9 +1265,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384347">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/2708/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/2708/04</rdfs:label>
     </owl:Class>
     
 
@@ -1262,9 +1275,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384348">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0733/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0733/05</rdfs:label>
     </owl:Class>
     
 
@@ -1272,9 +1285,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384349 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384349">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0643/05</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0643/05</rdfs:label>
     </owl:Class>
     
 
@@ -1282,9 +1295,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384350 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384350">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0867/04</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_384335"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human coronavirus NO/0867/04</rdfs:label>
     </owl:Class>
     
 
@@ -1292,8 +1305,29 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_694009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_694009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Severe acute respiratory syndrome-related coronavirus</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Severe acute respiratory syndrome-related coronavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15747"/>
+        <obo:IAO_0000115>The patient- and family-centered active holistic care of patients with advanced, progressive disease. Essential components of palliative care are: pain and symptom control, communication regarding treatment and alternatives, prognosis, and available services, rehabilitation services, care that addresses treatment and palliative concerns, intellectual, emotional, social, and spiritual needs, terminal care, support in bereavement. The goal of palliative care is an achievement of the best quality of life for patients and their families.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label>Palliative Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15747">
+        <obo:IAO_0000115>Supportive care is that which helps the patient and their family to cope with cancer and treatment of it from pre-diagnosis, through the process of diagnosis and treatment, to cure, continuing illness or death and into bereavement. It helps the patient to maximize the benefits of treatment and to live as well as possible with the effects of the disease. Supportive therapy may provide a patient with friendship, encouragement, practical advice such as access to community resources or how to develop a more active social life, vocational counseling, suggestions for minimizing friction with family members, and, above all, hope that the life of the patient may be improved. In all situations, supportive therapy involves the teaching of such life skills as managing medication, learning to socialize, handling finances, and getting a job.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label>Supportive Care</rdfs:label>
     </owl:Class>
     
 
@@ -1301,9 +1335,9 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C17930 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17930">
-        <rdfs:label>Immune Response Process</rdfs:label>
         <obo:IAO_0000115>Any immune system response of an organisms to an internal or invasive threat.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label>Immune Response Process</rdfs:label>
     </owl:Class>
     
 
@@ -1311,9 +1345,9 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C25193 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25193">
-        <rdfs:label>Occupation</rdfs:label>
         <obo:IAO_0000115>The principal activity that a person does to earn money.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label>Occupation</rdfs:label>
     </owl:Class>
     
 
@@ -1321,10 +1355,10 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -1332,10 +1366,10 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:label xml:lang="en">organism</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -1343,21 +1377,10 @@
     <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
-        <rdfs:label>treatment</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate the signs and symptoms of a disorder or pathological process</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000112">
-        <rdfs:label xml:lang="en">therapeutic procedure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-        <obo:IAO_0000115>A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>treatment</rdfs:label>
     </owl:Class>
     
 
@@ -1365,10 +1388,9 @@
     <!-- http://purl.obolibrary.org/obo/OGMS_0000114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
-        <rdfs:label xml:lang="en">immunotherapy procedure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112"/>
         <obo:IAO_0000115>A therapeutic procedure that uses immune system derived entities.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">immunotherapy procedure</rdfs:label>
     </owl:Class>
     
 
@@ -1376,11 +1398,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
     </owl:Class>
     
 
@@ -1388,10 +1410,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concentration of</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a substance by virtue of the amount of the bearer&#39;s there is mixed with another substance.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a substance by virtue of the amount of the bearer&apos;s there is mixed with another substance.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concentration of</rdfs:label>
     </owl:Class>
     
 
@@ -1399,11 +1421,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphology</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a single physical entity inhering in the bearer by virtue of the bearer&#39;s size or shape or structure.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphology</rdfs:label>
     </owl:Class>
     
 
@@ -1411,9 +1433,9 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000068">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualitative</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualitative</rdfs:label>
     </owl:Class>
     
 
@@ -1421,10 +1443,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000069">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deviation (from_normal)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deviation (from_normal)</rdfs:label>
     </owl:Class>
     
 
@@ -1432,10 +1454,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000141">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A morphology quality inhering in a bearer by virtue of the bearer&#39;s relative position, shape, arrangements and connectivity of an organism&#39;s various parts; the pattern underlying its form.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A morphology quality inhering in a bearer by virtue of the bearer&apos;s relative position, shape, arrangements and connectivity of an organism&apos;s various parts; the pattern underlying its form.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structure</rdfs:label>
     </owl:Class>
     
 
@@ -1443,10 +1465,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000973 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000973">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">porosity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure quality inhering in a bearer by virtue of the bearer&#39;s disposition to admit the passage of gas or liquid through pores or interstices.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">porosity</rdfs:label>
     </owl:Class>
     
 
@@ -1454,10 +1476,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical quality</rdfs:label>
     </owl:Class>
     
 
@@ -1465,11 +1487,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical object quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality which inheres in a continuant.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical object quality</rdfs:label>
     </owl:Class>
     
 
@@ -1477,10 +1499,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002182">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular quality</rdfs:label>
     </owl:Class>
     
 
@@ -1488,10 +1510,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002300">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000069"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that has a value that is increased compared to normal or average.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased quality</rdfs:label>
     </owl:Class>
     
 
@@ -1499,10 +1521,10 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002301">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000069"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that has a value that is decreased compared to normal or average.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased quality</rdfs:label>
     </owl:Class>
     
 
@@ -1510,11 +1532,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002303 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002303">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased object quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002301"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of an object that has a value that is decreased compared to normal or average.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased object quality</rdfs:label>
     </owl:Class>
     
 
@@ -1522,11 +1544,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002305">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased object quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002300"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of an object that has a value that is increased compared to normal or average.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased object quality</rdfs:label>
     </owl:Class>
     
 
@@ -1534,11 +1556,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0015024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased porosity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002305"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase in porosity.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased porosity</rdfs:label>
     </owl:Class>
     
 
@@ -1546,11 +1568,11 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0015025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased porosity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002303"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An decrease in porosity.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decreased porosity</rdfs:label>
     </owl:Class>
     
 
@@ -1558,9 +1580,9 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission process</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is the means during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission process</rdfs:label>
     </owl:Class>
     
 
@@ -1568,10 +1590,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct transmission is a transmission process that is the means during which the pathogen is transmitted immediately from a reservoir, source or host to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct</rdfs:label>
     </owl:Class>
     
 
@@ -1579,10 +1601,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000002">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indirect</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect transmission is a transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by intermediary vehicles, vectors or as airborne dust particles.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indirect</rdfs:label>
     </owl:Class>
     
 
@@ -1590,10 +1612,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical transmission is an indirect vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by being transported on the external surface of the vector.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanical</rdfs:label>
     </owl:Class>
     
 
@@ -1601,10 +1623,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector-borne transmission is an indirect transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an animate intermediary vector to another host. Most vectors are arthropods such as mosquitoes, fleas, and ticks.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne</rdfs:label>
     </owl:Class>
     
 
@@ -1612,10 +1634,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congenital transmission is a direct transmission process during which the pathogen is transmitted directly from mother to child at or around the time of birth.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital</rdfs:label>
     </owl:Class>
     
 
@@ -1623,10 +1645,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact transmission is a direct transmission process during which the pathogen is transmitted   from a reservoir, source or host to another host by kissing, skin-to-skin contact, sexual intercourse, or by contact with soil or vegetation containing the pathogen.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact</rdfs:label>
     </owl:Class>
     
 
@@ -1634,10 +1656,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">droplet spread</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Droplet spread transmission is a direct transmission process during which the pathogen is transmitted from a reservoir, source or host to another host by spray of aerosols over a short distance, spray from sneezing, coughing or talking.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">droplet spread</rdfs:label>
     </owl:Class>
     
 
@@ -1645,10 +1667,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">airborne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airborne transmission is an indirect transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host while suspended in the air as dust.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">airborne</rdfs:label>
     </owl:Class>
     
 
@@ -1656,10 +1678,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vehicle-borne transmission is an indirect transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by inanimate intermediary vehicle objects.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne</rdfs:label>
     </owl:Class>
     
 
@@ -1667,10 +1689,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne fomite</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vehicle-borne fomite transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by inanimate objects including: medical instruments, cloth, fur, metal or plastic utensils.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne fomite</rdfs:label>
     </owl:Class>
     
 
@@ -1678,10 +1700,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000012">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne ingestion</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vehicle-borne ingestion transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by ingestion of fluids or foods or food products including: food, water, milk, or meat products.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne ingestion</rdfs:label>
     </owl:Class>
     
 
@@ -1689,10 +1711,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne medical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vehicle-borne medical transmission is an indirect vehicle-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host to another host by biological products including: blood, serum, plasma, tissue, or organs.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle-borne medical</rdfs:label>
     </owl:Class>
     
 
@@ -1700,10 +1722,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne bite</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector-borne bite transmission is an indirect vector-borne transmission during which the pathogen is indirectly transferred by insect bites from a reservoir, source or host via a vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne bite</rdfs:label>
     </owl:Class>
     
 
@@ -1711,10 +1733,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne gastro-intestinal</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector-borne gastro-intestinal transmission is an indirect vector-borne transmission process during which the pathogen is transported, from a reservoir, source or host to another host, within the vector and undergoes part of it&#39;s lifecycle in the intermediate host.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector-borne gastro-intestinal transmission is an indirect vector-borne transmission process during which the pathogen is transported, from a reservoir, source or host to another host, within the vector and undergoes part of it&apos;s lifecycle in the intermediate host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector-borne gastro-intestinal</rdfs:label>
     </owl:Class>
     
 
@@ -1722,10 +1744,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placental</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000006"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placental transmission is a congenital transmission process during which the pathogen is transmitted directly from mother to child across the placental barrier.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placental</rdfs:label>
     </owl:Class>
     
 
@@ -1733,10 +1755,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arthropod borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropod borne transmission is a vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an animate intermediary arthropod vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arthropod borne</rdfs:label>
     </owl:Class>
     
 
@@ -1744,10 +1766,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect borne transmission is an arthropod vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary insect vector such as a flea or mosquito to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect borne</rdfs:label>
     </owl:Class>
     
 
@@ -1755,10 +1777,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mosquito borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000020"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosquito borne transmission is an insect borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary mosquito vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mosquito borne</rdfs:label>
     </owl:Class>
     
 
@@ -1766,10 +1788,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anopheles gambiae borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000021"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anopheles gambiae borne transmission is a mosquito borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary mosquito vector of the species Anopheles gambiae to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anopheles gambiae borne</rdfs:label>
     </owl:Class>
     
 
@@ -1777,10 +1799,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flea borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000020"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flea borne transmission is an insect borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary flea vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flea borne</rdfs:label>
     </owl:Class>
     
 
@@ -1788,10 +1810,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tick borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tick borne transmission is an arachnid borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary tick vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tick borne</rdfs:label>
     </owl:Class>
     
 
@@ -1799,10 +1821,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copepod borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copepod borne transmission is a vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an animate intermediary copepod vector to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copepod borne</rdfs:label>
     </owl:Class>
     
 
@@ -1810,10 +1832,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dracunculus medinensis borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000025"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dracunculus medinensis borne transmission is a copepod borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an animate intermediary copepod vector of the species Dracunculus medinensis to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dracunculus medinensis borne</rdfs:label>
     </owl:Class>
     
 
@@ -1821,10 +1843,10 @@
     <!-- http://purl.obolibrary.org/obo/TRANS_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arachnid borne</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arachnid borne transmission is an arthropod vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary arthropod vector such as a tick to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arachnid borne</rdfs:label>
     </owl:Class>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
@@ -1839,5 +1861,5 @@
 
 
 
-<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
