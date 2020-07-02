@@ -1326,6 +1326,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">Do weather conditions influence the transmission of the coronavirus (SARS-COV-2)</obo:IAO_0000112>
         <rdfs:label xml:lang="en">environment-related transmission process</rdfs:label>
     </owl:Class>
     
@@ -1358,7 +1359,11 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1378,10 +1383,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1546,7 +1547,11 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1558,10 +1563,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1953,7 +1954,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1966,10 +1975,23 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
-                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">Personal protective equipment for preventing highly infectious diseases due to exposure to contaminated body fluids in healthcare staff</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by population, PPE usage and vehicle of infectious agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000115">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
@@ -1978,8 +2000,33 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">Personal protective equipment for preventing highly infectious diseases due to exposure to contaminated body fluids in healthcare staff</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process by population, PPE usage and vehicle of infectious agent</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">Spreading SARS-COV-2 through ocular fluids</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by vehicle of infectious agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000116">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000509"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">What is the evidence for faecal shedding of SARS-COV-2 in children?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by population and vehicle of infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -4805,6 +4852,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
         <obo:IAO_0000112 xml:lang="en">Advances in the research of cytokine storm mechanism induced by Corona Virus Disease 2019 and the corresponding immunotherapies</obo:IAO_0000112>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000007">
+        <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
     </rdf:Description>
 </rdf:RDF>
 
