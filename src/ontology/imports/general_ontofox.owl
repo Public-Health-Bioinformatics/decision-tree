@@ -18,12 +18,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
@@ -1082,6 +1082,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000555">
+        <rdfs:label xml:lang="en">disinfectant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity bearing a disinfectant role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000569">
@@ -1931,16 +1942,16 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
     </owl:Class>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
