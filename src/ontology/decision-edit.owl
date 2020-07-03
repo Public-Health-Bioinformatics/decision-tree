@@ -583,7 +583,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000009"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1157,6 +1157,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
         <obo:IAO_0000112 xml:lang="en">Does overweight/obesity increase the risk of severe disease or death?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Who is at risk [eg blood groups] of an infection with SARS-COV-2?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">What are the risk factors of progression to poor outcome?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">1.2 [infectious disease] risk factor</rdfs:label>
     </owl:Class>
@@ -1347,6 +1348,9 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112>What is the evidence for the importance of outdoor transmission and of indoor transmission of SARS-COV-2?</obo:IAO_0000112>
+        <obo:IAO_0000112>What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
+        <rdfs:comment>is &quot;&apos;transmission process&apos; &apos;affected by&apos; some [location]&quot; close to what we&apos;re after here, or is it better to leave it in terms of &quot;transmission process in location&quot;?</rdfs:comment>
         <rdfs:label xml:lang="en">transmission process by location</rdfs:label>
     </owl:Class>
     
@@ -1941,6 +1945,8 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance on 3D printed masks in terms of materials, donning, removing and disposing?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the effectiveness of different types of masks and PPE for SARS-COV-2?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process by PPE usage</rdfs:label>
     </owl:Class>
@@ -2028,6 +2034,16 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for faecal shedding of SARS-COV-2 in children?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process by population and vehicle of infectious agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process by population</rdfs:label>
     </owl:Class>
     
 
@@ -4088,6 +4104,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C15747">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <obo:IAO_0000112>What are the optimal strategies to offer supportive care to those with COVID-19 disease?</obo:IAO_0000112>
     </rdf:Description>
     
 
@@ -4737,6 +4754,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000072"/>
+        <obo:IAO_0000112 xml:lang="en">The role of asymptomatic SARS-CoV-2 infections: rapid living systematic review and meta-analysis (https://osf.io/9ewys/)</obo:IAO_0000112>
         <obo:IAO_0000112>What is the role of pre-symptomatic transmission of SARS-COV-2?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">asymptomatic transmission</rdfs:label>
     </owl:Class>
