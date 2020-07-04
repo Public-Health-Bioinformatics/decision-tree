@@ -18,12 +18,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
@@ -88,10 +88,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002">
+        <rdfs:label xml:lang="en">basic reproduction number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000043"/>
+        <obo:IAO_0000115 xml:lang="en">The average number of transmissions of an infectious agent from an infectious organism to a susceptible organism within a completely susceptible population.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000043">
+        <rdfs:label xml:lang="en">reproduction number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000679"/>
+        <obo:IAO_0000115 xml:lang="en">The average value of transmissions of the infectious agent from one infected organism to another, resulting in an infection. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
         <rdfs:label xml:lang="en">entity</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
@@ -105,6 +128,7 @@
         <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
@@ -130,6 +154,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
@@ -196,12 +221,46 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:label xml:lang="en">fiat object</rdfs:label>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+        <rdfs:label xml:lang="en">object aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:label xml:lang="en">material entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
@@ -217,6 +276,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000338">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vomit material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of vomit, a bodily fluid consisting of the expulsed contents of the stomach of an organism disgorged through the mouth or nose.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fecal material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of feces, an excreta consisting of waste products expelled from an animal&#39;s digestive tract through the anus (or cloaca) during defecation.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002008">
@@ -227,10 +308,34 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of urine, a liquid excreta containing water and waste products made by the kidneys, stored in the bladder, and leaves the body through the urethra.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002264">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waste material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115>A material which is not the desired output of a process and which is typically the input of a process which removes it from its producer (e.g. a disposal process).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
@@ -243,6 +348,17 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental material derived from living organisms and composed primarily of one or more biomacromolecules.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
     
@@ -422,6 +538,305 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000019">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily fluid material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000155"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organic material which is primarily composed of some natural bodily fluid or secretion such as blood, semen, saliva, blood plasma, intracellular and interstitial fluids.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000020">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of blood, a bodily fluid composed of blood plasma and blood cells suspended within the plasma that circulates around the organism&#39;s body. Blood performs may important functions including the supplying of oxygen and nutrients, removal of waste, circulation of white blood cells, detection of antibodes, coagulation, transportation of antibodies and the regulation of pH and body temperature.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000021">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amniotic fluid material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of amniotic fluid, a bodily fluid consisting of watery liquid surrounding and cushioning a growing fetus within the amnion. It allows the fetus to move freely without the walls of the uterus being too tight against its body. Buoyancy is also provided.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000022">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excreta material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002264"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of excreta, bodily fluids consisting of matter which contains the waste products of biological processes, including urine or feces, discharged from an organism&#39;s body.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000023">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bile material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of bile, a bodily fluid consisting of a bitter, yellow or green alkaline fluid secreted by hepatocytes from the liver of most vertebrates. In many species, bile is stored in the gallbladder between meals and upon eating is discharged into the duodenum where the bile aids the process of digestion of lipids.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000024">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aqueous humour material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of aqueous humour, a bodily fluid consisting of a thick watery substance that fills the space between the lens and the cornea.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000025">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweat material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excreta material which is composed primarily of sweat, an excreta consisting primarily of water as well as a smaller amount of sodium chloride that is excreted by the sweat glands in the skin of mammals.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000026">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyme material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of chyme, a bodily fluid consisting of a liquid substance found in the stomach before passing through the pyloric valve and entering the duodenum. It results from the mechanical and chemical breakdown of a bolus and consists of partially digested food, water, hydrochloric acid, and various digestive enzymes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000027">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood plasma material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of blood plasma, a bodily fluid that comprises the liquid component of blood, in which the blood cells are suspended. It makes up about 55% of total blood volume.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000028">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ear wax material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of ear wax, a bodily fluid consisting of a yellowish, waxy substance secreted in the ear canal of humans and many other mammals. It plays an important role in the human ear canal, assisting in cleaning and lubrication, and also provides some protection from bacteria, fungi, and insects.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000029">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerebrospinal fluid material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of cerebrospinal fluid, a clear bodily fluid that occupies the subarachnoid space and the ventricular system around and inside the brain. CSF is a clear bodily fluid that occupies the subarachnoid space and the ventricular system around and inside the brain.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000030">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chyle material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of chyle, a bodily fluid consisting of a milky fluid consisting of lymph and emulsified fats; formed in the small intestine during digestion of ingested fats.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000031">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breast milk material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of breast milk, is a bodily fluid produced that is secreted from two milk-secreting glandular organs on a female&#39;s chest.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000032">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitreous humor material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of vitreous humor, a bodily fluid consisting of a clear gel that fills the space between the lens and the retina of the eyeball of humans and other vertebrates.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000033">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleural effusion material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of a pleural effusion, a bodily fluid that is produced in excess and accumulates in the pleural cavity, the fluid-filled space that surrounds the lungs. Excessive amounts of such fluid can impair breathing by limiting the expansion of the lungs during inhalation.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000034">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tear material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of a volume of tears, a bodily fluid consisting of a drop of the clear salty liquid secreted by glands (lacrimal glands) in the eyes. Tears wet the membrane covering the eye and help rid the eye of irritating substances.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000035">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oronasal secretion material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of an oronasal secretion, a bodily fluid secreted from the body via the mouth or nose.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000036">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saliva material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of saliva, a slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme (as ptyalin) that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebum material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of sebum, an oily bodily fluid secreted from the sebaceous glads that is made of fat (lipids) and the debris of dead fat-producing cells. In the glands, sebum is produced within specialized cells and is released as these cells burst. Sebum acts to protect and waterproof hair and skin, and keep them from becoming dry, brittle and cracked. It can also inhibit the growth of microorganisms on skin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000038">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pus material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of pus, a bodily fluid consisting of a whitish-yellow or yellow substance produced during inflammatory responses of the body that can be found in regions of pyogenic bacterial infections. Pus is produced from the dead and living cells which travel into the intercellular spaces around the affected cells.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000039">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synovial fluid material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of synovial fluid, a bodily fluid secreted by the synovial membrane into the joint cavity to form a thin layer at the surface of cartilage.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000040">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucus material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of mucus, a bodily fluid consisting of a slippery secretion of the lining of the mucous membranes in the body. It is a viscous colloid containing antiseptic enzymes (such as lysozyme) and immunoglobulins. Mucus is produced by goblet cells in the mucous membranes that cover the surfaces of the membranes. It is made up of mucins and inorganic salts suspended in water.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymph material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of lymph, a bodily fluid consisting of a usually clear coagulable fluid that passes from intercellular spaces of body tissue into the lymphatic vessels, is discharged into the blood by way of the thoracic duct and right lymphatic duct, and resembles blood plasma in containing white blood cells and especially lymphocytes but normally few red blood cells and no platelets.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000042">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial fluid material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily fluid material which is composed primarily of interstitial fluid, a bodily fluid consisting of a solution which bathes and surrounds the cells of multicellular animals. It is the main component of the extracellular fluid, which also includes plasma and transcellular fluid.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDOMAL_0001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDOMAL_0001255">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human population</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population of human beings.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/idomal.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000417 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000417">
@@ -476,6 +891,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000464">
+        <rdfs:label xml:lang="en">infectivity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A quality that inheres in an infectious agent and is the liklihood that the infectious disposition will be realized upon exposure of a susceptible organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
@@ -505,6 +931,28 @@
         <rdfs:label xml:lang="en">infectious disease pandemic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process in which multiple infectious disease epidemics of the same type of infectious disease unfold over overlapping periods of time and affect organism populations located in different geographic regions, including different countries and continents.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
+        <rdfs:label xml:lang="en">organism population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">An aggregate of organisms of the same Species.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000511">
+        <rdfs:label xml:lang="en">infected population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <obo:IAO_0000115 xml:lang="en">An organism population whose members have an infection.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
@@ -623,6 +1071,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000544">
+        <rdfs:label xml:lang="en">fomite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity bearing a fomite role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000555">
+        <rdfs:label xml:lang="en">disinfectant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity bearing a disinfectant role.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000569">
@@ -651,6 +1121,17 @@
         <rdfs:label xml:lang="en">symptomatic host of infectious agent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
         <obo:IAO_0000115 xml:lang="en">An organism who is host to an infectious agent and has symptoms of the infectious disease associated with the infectious agent</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000592">
+        <rdfs:label xml:lang="en">immune population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <obo:IAO_0000115 xml:lang="en">An organism population whose members have acquired immunity to an infectious agent.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </owl:Class>
     
@@ -899,6 +1380,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15292">
+        <rdfs:label>Palliative Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15747"/>
+        <obo:IAO_0000115>The patient- and family-centered active holistic care of patients with advanced, progressive disease. Essential components of palliative care are: pain and symptom control, communication regarding treatment and alternatives, prognosis, and available services, rehabilitation services, care that addresses treatment and palliative concerns, intellectual, emotional, social, and spiritual needs, terminal care, support in bereavement. The goal of palliative care is an achievement of the best quality of life for patients and their families.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15747">
+        <rdfs:label>Supportive Care</rdfs:label>
+        <obo:IAO_0000115>Supportive care is that which helps the patient and their family to cope with cancer and treatment of it from pre-diagnosis, through the process of diagnosis and treatment, to cure, continuing illness or death and into bereavement. It helps the patient to maximize the benefits of treatment and to live as well as possible with the effects of the disease. Supportive therapy may provide a patient with friendship, encouragement, practical advice such as access to community resources or how to develop a more active social life, vocational counseling, suggestions for minimizing friction with family members, and, above all, hope that the life of the patient may be improved. In all situations, supportive therapy involves the teaching of such life skills as managing medication, learning to socialize, handling finances, and getting a job.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C17930 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17930">
@@ -926,6 +1428,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000679">
+        <rdfs:label xml:lang="en">average value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arithmetic mean</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A  data item that is produced as the output of an averaging data transformation and represents the average value of the input data.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </owl:Class>
     
 
@@ -1427,6 +1941,18 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arachnid borne transmission is an arthropod vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary arthropod vector such as a tick to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
     </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>

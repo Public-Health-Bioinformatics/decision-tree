@@ -99,3 +99,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+src/ontology/catalog-v001.xml

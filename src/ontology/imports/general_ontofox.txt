@@ -200,6 +200,26 @@ IDO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/IDO_0000543 #vehicle of infectious agent
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+[Source ontology]
+IDO
+
+[Low level source term URIs]
 http://purl.obolibrary.org/obo/IDO_0000421 #infectious agent vehicle role
 includeAllChildren
 
@@ -363,6 +383,186 @@ PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+IDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IDO_0000511 #infected population
+http://purl.obolibrary.org/obo/IDO_0000592 #immune population
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+[Source ontology]
+IDOMAL
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IDOMAL_0001255 #human population
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ENVO_02000019 #bodily fluid
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C15747 #supportive care
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C15292 #palliative therapy
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCIT_C15747
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+IDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IDO_0000464 #infectivity
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+APOLLO_SV
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/APOLLO_SV_00000002 #basic reproduction number
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+[Source ontology]
+IDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IDO_0000555 #disinfectant
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
