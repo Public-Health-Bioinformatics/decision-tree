@@ -823,9 +823,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
-        <obo:IAO_0000112 xml:lang="en">HF nasal cannulation</obo:IAO_0000112>
-        <obo:IAO_0000112>Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">What are the optimal strategies to offer supportive care to those with COVID-19 disease?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">Is the outcome different between treated cases and untreated cases?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">6. treatment regimen efficacy metric</rdfs:label>
     </owl:Class>
@@ -2044,6 +2041,18 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process by population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112 xml:lang="en">HF nasal cannulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Is there evidence that the use of nasal high flow systems 40-60 litres with up to 60% oxygen is beneficial, harmful or increases risk of transmission of COVID- 19 (work in progress)?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What are the optimal strategies to offer supportive care to those with COVID-19 disease?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">treatment regimen efficacy</rdfs:label>
     </owl:Class>
     
 
@@ -3858,6 +3867,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000447">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000112>What are the estimated herd immunity levels for SARS-COV-2?</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000464 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
     </rdf:Description>
     
 

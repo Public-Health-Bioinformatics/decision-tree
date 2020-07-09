@@ -578,3 +578,24 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C94340 #Primary Care
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
