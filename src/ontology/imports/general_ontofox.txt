@@ -578,3 +578,90 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+OPMI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OPMI_0000230 #patient care
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+
+[Source ontology]
+OGMS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGMS_0000063 #disease course
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+[Source ontology]
+VO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
+
+[Source ontology]
+CIDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CIDO_0000001 #coronavirus infectious disease process
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]

@@ -73,6 +73,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -113,11 +114,13 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label>entity</rdfs:label>
         <rdfs:label xml:lang="en">entity</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     
 
@@ -125,13 +128,16 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:label>continuant</rdfs:label>
         <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An entity  that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     
 
@@ -156,6 +162,7 @@
         <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     
 
@@ -189,6 +196,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <rdfs:label xml:lang="en">quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
     </owl:Class>
@@ -262,6 +270,7 @@
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     
 
@@ -335,9 +344,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
     
@@ -444,6 +451,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000844">
         <rdfs:label xml:lang="en">fog</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001652"/>
         <obo:IAO_0000115>A visible mass of cloud water droplets or ice crystals suspended in the air at or near a planetary surface.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
@@ -521,7 +529,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001402">
         <rdfs:label xml:lang="en">haze</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001089"/>
-        <obo:IAO_0000115>An aersolised mass of dust, smoke, or other dry particulates which scatters visible light thus obsscuring  visibility through an atmosphere.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001652"/>
+        <obo:IAO_0000115>An aersolised mass of dust, smoke, or other dry particulates which scatters visible light thus obsscuring visibility through an atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
     
@@ -532,7 +541,19 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001458">
         <rdfs:label xml:lang="en">mist</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001088"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001652"/>
         <obo:IAO_0000115>A visible mass of water droplets or ice crystals suspended in the air at or near a planetary surface, formed when humid air cools rapidly.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001652">
+        <rdfs:label xml:lang="en">atmospheric aerosol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010505"/>
+        <obo:IAO_0000115>An aerosol that is suspended in an atmosphere.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
     </owl:Class>
     
@@ -1432,6 +1453,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
+        <rdfs:label xml:lang="en">processed material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">Is a material entity that is created or changed during material processing.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000679">
@@ -1451,6 +1483,17 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
+        <rdfs:label>disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">The totality of all processes through which a given disease instance is realized.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
     </owl:Class>
     
 
@@ -1484,6 +1527,91 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112"/>
         <obo:IAO_0000115>A therapeutic procedure that uses immune system derived entities.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000230">
+        <rdfs:label xml:lang="en">patient care</rdfs:label>
+        <obo:IAO_0000115>A health care rendered for the benefit of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000231">
+        <rdfs:label xml:lang="en">primary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
+        <obo:IAO_0000115>Primary care refers to the work of health professionals who act as a first point of consultation for all patients within the health care system</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000232">
+        <rdfs:label xml:lang="en">secondary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
+        <obo:IAO_0000115>Secondary care includes acute care: necessary treatment for a short period of time for a brief but serious illness, injury, or other health condition. This care is often found in a hospital emergency department. Secondary care also includes skilled attendance during childbirth, intensive care, and medical imaging services.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000233">
+        <rdfs:label xml:lang="en">tertiary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
+        <obo:IAO_0000115>Tertiary care is specialized consultative health care, usually for inpatients and on referral from a primary or secondary health professional, in a facility that has personnel and facilities for advanced medical investigation and treatment, such as a tertiary referral hospital.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000234">
+        <rdfs:label xml:lang="en">quaternary care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
+        <obo:IAO_0000115>The term quaternary care is sometimes used as an extension of tertiary care in reference to advanced levels of medicine which are highly specialized and not widely accessed.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000235">
+        <rdfs:label xml:lang="en">hospital care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
+        <obo:IAO_0000115>A patient care that is provided in hospital.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000236">
+        <rdfs:label xml:lang="en">nephrology care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000232"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000237">
+        <rdfs:label xml:lang="en">endocrinology care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000232"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
     </owl:Class>
     
 
@@ -1581,6 +1709,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical object quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality which inheres in a continuant.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
@@ -1941,20 +2070,31 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arachnid borne transmission is an arthropod vector-borne transmission process during which the pathogen is indirectly transferred from a reservoir, source or host via an intermediary arthropod vector such as a tick to another host.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/trans.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
+        <rdfs:label>vaccine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <obo:IAO_0000115>A vaccine is a processed material with the function that when administered, it prevents or ameliorates a disorder in a target organism by inducing or modifying adaptive immune responses specific to the antigens in the vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
 </rdf:RDF>
 
