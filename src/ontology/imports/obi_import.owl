@@ -2027,16 +2027,6 @@ and from &quot;http://www.nature.com/nrg/journal/v14/n3/full/nrg3367.html&quot;<
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
-
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obsolete Class</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
