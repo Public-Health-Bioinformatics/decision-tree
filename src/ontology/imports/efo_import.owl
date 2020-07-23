@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/decision/imports/efo_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/decision/imports/efo_import.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:userfiles="file:/data/var/www/html/ontofox/userfiles/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:userfiles="file:/data/var/www/html/ontofox/userfiles/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/decision/imports/efo_import.owl"/>
     
 
@@ -146,7 +146,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
 </rdfs:comment>
-        <rdfs:label>biological process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</rdfs:label>
     </owl:Class>
     
 
@@ -203,19 +203,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/EFO_0000412 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000412">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004919"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is a temporal measure from a defined start point e.g. diagnosis, or treatment of the period to appearance of a distant metastasis. A distant metastasis refers to cancer that has spread from the original (primary) tumor to distant organs or distant lymph nodes. Also known as distant cancer.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helen Parkinson</obo:IAO_0000117>
-        <obo:IAO_0000119>http://www.cancer.gov/dictionary?cdrid=415317</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distant metastasis free survival</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/EFO_0000433 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000433">
@@ -260,7 +247,7 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0000648 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000648">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004949"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000433"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">period of infection</rdfs:label>
@@ -284,7 +271,7 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0000714 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000714">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004949"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000433"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time of survival is an information entity which is about the length of time a material entity has survived after some adverse event, such as infection from a disease.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
@@ -525,7 +512,6 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han Chinese</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Han_Chinese</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Han_Chinese</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han Chinese</rdfs:label>
     </owl:Class>
@@ -771,19 +757,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/EFO_0004919 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004919">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000482"/>
-        <obo:IAO_0000115>The percentage of subjects in a study who have survived without cancer spread for a defined period of time. Usually reported as time since diagnosis or treatment. Can be reported for an individual or a study population.</obo:IAO_0000115>
-        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
-        <obo:IAO_0000119>www.oncura.net/glossary.php</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
-        <rdfs:label xml:lang="en">metastasis free survival</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/EFO_0004920 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004920">
@@ -934,5 +907,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
