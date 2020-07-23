@@ -1360,7 +1360,9 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">How can we reduce the transmission rates of nosocomial infections?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Is there a maximum time to exposure if indoors at safe distance.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What are the transmission rates of SARS-COV-2 in ICU?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for the importance of outdoor transmission and of indoor transmission of SARS-COV-2?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
         <rdfs:comment>is &quot;&apos;transmission process&apos; &apos;affected by&apos; some [location]&quot; close to what we&apos;re after here, or is it better to leave it in terms of &quot;transmission process in location&quot;?</rdfs:comment>
@@ -1543,6 +1545,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving location and PPE factor</rdfs:label>
     </owl:Class>
     
@@ -1586,6 +1589,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">A Home Toolkit for Primary Prevention of Influenza by Individuals and Families</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Infection control strategies for preventing the transmission of meticillin-resistant Staphylococcus aureus (MRSA) in nursing homes for older people</obo:IAO_0000112>
         <rdfs:comment>&apos;infectious disease prevention process&apos; may need to be replaced by something more specific</rdfs:comment>
@@ -1987,6 +1991,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance on 3D printed masks in terms of materials, donning, removing and disposing?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Physical interventions to interrupt or reduce the spread of respiratory viruses</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the effectiveness of different types of masks and PPE for SARS-COV-2?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving PPE factor</rdfs:label>
     </owl:Class>
@@ -2094,6 +2099,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">What are the main risk factors for health care workers for SARS, MERS and SARS-cov-2?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving population factor</rdfs:label>
     </owl:Class>
@@ -2182,6 +2188,49 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-15T19:45:01Z</dc:date>
         <rdfs:label xml:lang="en">infectious agent survival time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+        <obo:IAO_0000112 xml:lang="en">Overlapping and Discrete Aspects of the Pathology and Pathogenesis of the Emerging Human Pathogenic Coronaviruses SARS-CoV, MERS-CoV, and 2019-nCoV</obo:IAO_0000112>
+        <rdfs:comment>equivalent to &apos;pathogenesis&apos;?</rdfs:comment>
+        <rdfs:label xml:lang="en">infectious disease course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000124">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <obo:IAO_0000112 xml:lang="en">How effective is ash versus soap for hand washing to disinfect hands from SARS-COV-2</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">transmission process involving a preventative measure factor</rdfs:label>
     </owl:Class>
     
 
