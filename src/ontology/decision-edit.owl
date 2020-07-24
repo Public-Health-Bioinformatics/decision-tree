@@ -2121,6 +2121,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">What is the effect of inhaled steroids on the risk of prolonging ilness or developing severe COVID19?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the effect of prescribed ACE inhibitors on the risk of prolonging ilness or developing sever COVID19?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the effect of prescribed NSAIDs (including Ibuprofen) on the risk of prelonging ilness or developing sever COVID19?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What is the effect of remdesivir, interferon and steroids for developing Acute respiratory distress syndrome? [this can be reviewed in the context of SARS-COV-2 or more generally]</obo:IAO_0000112>
         <rdfs:label xml:lang="en">treatment regimen efficacy</rdfs:label>
     </owl:Class>
     
@@ -4130,6 +4131,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">How does infectiousness vary among asymptomatic, pre-symptomatic, and symptomatic cases?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">symptomatic transmission</rdfs:label>
     </owl:Class>
     
@@ -4624,6 +4626,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMIT_0004227 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0004227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000230 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPMI_0000230">
@@ -4969,6 +4979,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">How does infectiousness vary among asymptomatic, pre-symptomatic, and symptomatic cases?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">The role of asymptomatic SARS-CoV-2 infections: rapid living systematic review and meta-analysis (https://osf.io/9ewys/)</obo:IAO_0000112>
         <obo:IAO_0000112>What is the role of pre-symptomatic transmission of SARS-COV-2?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">asymptomatic transmission</rdfs:label>
