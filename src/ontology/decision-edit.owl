@@ -759,7 +759,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
         <obo:IAO_0000118 xml:lang="en">What type of patients have been identified with an infectious disease that is linked to the outbreak? (age, gender, co-morbidities, socioeconomic background, and profession)</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">3. outbreak patient demographic</rdfs:label>
+        <rdfs:label xml:lang="en">outbreak patient demographic</rdfs:label>
     </owl:Class>
     
 
@@ -767,9 +767,9 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
         <obo:IAO_0000118 xml:lang="en">Is there a patient (population) susceptibility/vulnerability to [infectious disease]?</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">4. outbreak population sub-group vulnerability</rdfs:label>
+        <rdfs:label xml:lang="en">outbreak population sub-group vulnerability</rdfs:label>
     </owl:Class>
     
 
@@ -779,7 +779,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
         <obo:IAO_0000118 xml:lang="en">Is there a location susceptibility / vulnerability to an infectious disease?</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">5. outbreak location vulnerability</rdfs:label>
+        <rdfs:label xml:lang="en">outbreak location vulnerability</rdfs:label>
     </owl:Class>
     
 
@@ -4288,7 +4288,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCIT_C17734 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:comment>Damion&apos;s note: requires a relation to the thing the population is at risk for, so it can&apos;t stand alone by itself as a datum.</rdfs:comment>
     </rdf:Description>
     
 
