@@ -1177,7 +1177,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000003"/>
-        <obo:IAO_0000112 xml:lang="en">Does overweight/obesity increase the risk of severe disease or death?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Who is at risk [eg blood groups] of an infection with SARS-COV-2?</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">What are the risk factors of progression to poor outcome?</obo:IAO_0000118>
         <rdfs:label xml:lang="en">1.2 infectious disease risk factor</rdfs:label>
@@ -2268,9 +2267,23 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000096"/>
+        <obo:IAO_0000112 xml:lang="en">Does overweight/obesity increase the risk of severe disease or death?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Prevalence of comorbidities in the novel Wuhan coronavirus (COVID-19) infection: a systematic review and meta-analysis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What are the key risk factors that lead to hospitalisation, ICU admission or death from COVID-19?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the main co-morbidities that lead to hospitalisation, ICU admission or death from COVID-19? [with a focus on asthma]</obo:IAO_0000112>
         <rdfs:comment xml:lang="en">change &apos;has part&apos; to &apos;is carrier of&apos; (http://purl.obolibrary.org/obo/RO_0010002)?</rdfs:comment>
         <rdfs:label xml:lang="en">infectious disease course involving comorbidities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000489"/>
+        <obo:IAO_0000112 xml:lang="en">2019 Novel Coronavirus Patients&apos; Clinical Characteristics, Discharge Rate, and Fatality Rate of Meta-Analysis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Global Covid-19 Case Fatality Rates</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">infectious disease mortality rate in location</rdfs:label>
     </owl:Class>
     
 
