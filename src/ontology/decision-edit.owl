@@ -1675,6 +1675,27 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000123"/>
+        <obo:IAO_0000112>Clinical Feature of COVID-19 in Elderly Patients: A Comparison With Young and Middle-Aged Patients</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">infectious disease course involving population factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000100">
