@@ -1373,39 +1373,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000077">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000063"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25193"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
  (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
@@ -1529,21 +1496,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000087">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving location and PPE factor</rdfs:label>
     </owl:Class>
@@ -1553,8 +1505,11 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
-        <rdfs:label xml:lang="en">personal protective equipment process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600003"/>
+        <obo:IAO_0000112 xml:lang="en">1) Are there any evidence-based ways of assessing dyspnoea by telephone or video consultation?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">How to assess breathlessness remotely / how to distinguish characteristics of COVID vs non COVID?</obo:IAO_0000112>
+        <rdfs:comment xml:lang="en">eventually move to OBI</rdfs:comment>
+        <rdfs:label xml:lang="en">remote patient assessment</rdfs:label>
     </owl:Class>
     
 
@@ -1621,31 +1576,10 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000091">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000093"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">What is the effectiveness of keeping 1 meter vs. 2 meters distance during the COVID-19 epidemic?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for mass gatherings during global pandemics?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving social behaviour factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000093 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">need to find a better term for this - intended to include physical distancing, mass gatherings, isolation, etc. -MI</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">social behaviour process</rdfs:label>
     </owl:Class>
     
 
@@ -1958,17 +1892,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000113">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000088"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Decontamination interventions for the reuse of surgical mask personal protective equipment (PPE): a systematic review [CRD42020178290]</obo:IAO_0000112>
@@ -2301,6 +2224,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Public health measures taken to reduce the spread of an infectious disease outbreak in a population</obo:IAO_0000115>
+        <rdfs:comment>eventually should be added to IDO</rdfs:comment>
+        <rdfs:comment>seems very similar to &apos;infectious disease transmission prevention methods&apos;; lots of overlap with transmission</rdfs:comment>
         <rdfs:label xml:lang="en">public health infectious disease intervention</rdfs:label>
     </owl:Class>
     
@@ -2315,11 +2241,38 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">hand washing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">personal protective equipment process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
         <rdfs:label xml:lang="en">ORF3b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000133"/>
+        <rdfs:label xml:lang="en">PPE disinfection process</rdfs:label>
     </owl:Class>
     
 
