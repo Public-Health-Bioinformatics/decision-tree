@@ -398,15 +398,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000086 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
-        <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
-        <rdfs:comment xml:lang="en">eventually change to IDO term once IDO has one</rdfs:comment>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
@@ -2233,7 +2224,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
         <obo:IAO_0000112 xml:lang="en">COVID-19 clinical management guidelines</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the main interventions that can be easily adopted by LMICs?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What can we in Scotland/UK learn from the emergency measures that have been applied in other countries?</obo:IAO_0000112>
@@ -2284,6 +2275,42 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">2019 Novel Coronavirus Patients&apos; Clinical Characteristics, Discharge Rate, and Fatality Rate of Meta-Analysis</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Global Covid-19 Case Fatality Rates</obo:IAO_0000112>
         <rdfs:label xml:lang="en">infectious disease mortality rate in location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">quarantine process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">physical distancing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">public health infectious disease intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">contact tracing process</rdfs:label>
     </owl:Class>
     
 
@@ -5156,6 +5183,10 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
+        <rdfs:comment xml:lang="en">eventually change to IDO term once IDO has one</rdfs:comment>
+        <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000545">
         <obo:IAO_0000112>What are the optimal methods for monitoring spread of COVID-19?</obo:IAO_0000112>
     </rdf:Description>
