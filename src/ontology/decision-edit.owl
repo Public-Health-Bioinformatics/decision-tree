@@ -1350,7 +1350,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000112 xml:lang="en">Do weather conditions influence the transmission of the coronavirus (SARS-COV-2)</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">environment-related transmission process</rdfs:label>
+        <rdfs:label xml:lang="en">transmission process involving an environmental factor</rdfs:label>
     </owl:Class>
     
 
@@ -1369,27 +1369,11 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000112 xml:lang="en">Emergency management for preventing and controlling nosocomial infection of 2019 novel coronavirus: implications for the dermatology department</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">How can we reduce the transmission rates of nosocomial infections?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Is there a maximum time to exposure if indoors at safe distance.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Preparing for a COVID-19 pandemic: a review of operating room outbreak response measures in a large tertiary hospital in Singapore</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the transmission rates of SARS-COV-2 in ICU?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for the importance of outdoor transmission and of indoor transmission of SARS-COV-2?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
-        <rdfs:comment>is &quot;&apos;transmission process&apos; &apos;affected by&apos; some [location]&quot; close to what we&apos;re after here, or is it better to leave it in terms of &quot;transmission process in location&quot;?</rdfs:comment>
         <rdfs:label xml:lang="en">transmission process involving location factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">&quot;What is the evidence for recommending face masks in risk groups 
- (by occupation or pre-existing health conditions)&quot;</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">What is the efficacy of standard face masks compared to respirator masks in preventing COVID-type respiratory illnesses in primary care staff</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving population and PPE factor</rdfs:label>
     </owl:Class>
     
 
@@ -1505,15 +1489,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000087 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000087">
-        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving location and PPE factor</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DECISION_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000088">
@@ -1522,44 +1497,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <obo:IAO_0000112 xml:lang="en">How to assess breathlessness remotely / how to distinguish characteristics of COVID vs non COVID?</obo:IAO_0000112>
         <rdfs:comment xml:lang="en">eventually move to OBI</rdfs:comment>
         <rdfs:label xml:lang="en">remote patient assessment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000089 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000089">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">A Home Toolkit for Primary Prevention of Influenza by Individuals and Families</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Infection control strategies for preventing the transmission of meticillin-resistant Staphylococcus aureus (MRSA) in nursing homes for older people</obo:IAO_0000112>
-        <rdfs:comment>&apos;infectious disease prevention process&apos; may need to be replaced by something more specific</rdfs:comment>
-        <rdfs:label xml:lang="en">transmission process involving population, location and preventative measure factor</rdfs:label>
     </owl:Class>
     
 
@@ -1588,10 +1525,8 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">What is the effectiveness of keeping 1 meter vs. 2 meters distance during the COVID-19 epidemic?</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">What is the evidence for mass gatherings during global pandemics?</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving social behaviour factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">infection control measure</rdfs:label>
     </owl:Class>
     
 
@@ -1924,62 +1859,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000113 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Decontamination interventions for the reuse of surgical mask personal protective equipment (PPE): a systematic review [CRD42020178290]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Efficacy and safety of disinfectants for the decontamination of N95 and SN95 filtering facepiece respirators: protocol for a systematic review [CRD42020178440]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance on 3D printed masks in terms of materials, donning, removing and disposing?</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Microwave- and heat-based decontamination for facemask personal protective equipment (PPE) [CRD42020177036]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Physical interventions to interrupt or reduce the spread of respiratory viruses</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Ultraviolet germicidal irradiation (UVGI) for facemask personal protective equipment (PPE): a systematic review [CRD42020176156]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">What is the effectiveness of different types of masks and PPE for SARS-COV-2?</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving PPE factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000114">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">Personal protective equipment for preventing highly infectious diseases due to exposure to contaminated body fluids in healthcare staff</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving population, PPE usage and vehicle of infectious agent factor</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DECISION_0000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000115">
@@ -2001,33 +1880,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000116 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000116">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000543"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000509"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">What is Duration of viral shedding in HIV+ on ART</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">What is the evidence for faecal shedding of SARS-COV-2 in children?</obo:IAO_0000112>
-        <rdfs:comment>ISSUE: is this transmission modelled at an individual level, or is this population level dynamics? (damion q)</rdfs:comment>
-        <rdfs:label xml:lang="en">transmission process involving population and vehicle of infectious agent factor</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DECISION_0000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000117">
@@ -2043,7 +1895,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the main risk factors for health care workers for SARS, MERS and SARS-cov-2?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving population factor</rdfs:label>
@@ -2176,14 +2027,13 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000004"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">How effective is ash versus soap for hand washing to disinfect hands from SARS-COV-2</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">transmission process involving a preventative measure factor</rdfs:label>
+        <rdfs:label xml:lang="en">transmission process involving an infection control measure factor</rdfs:label>
     </owl:Class>
     
 
@@ -2267,6 +2117,8 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <obo:IAO_0000112 xml:lang="en">What is the effectiveness of keeping 1 meter vs. 2 meters distance during the COVID-19 epidemic?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What is the evidence for mass gatherings during global pandemics?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">physical distancing process</rdfs:label>
     </owl:Class>
     
@@ -2285,6 +2137,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">The SARS, MERS and novel coronavirus (COVID-19) epidemics, the newest and biggest global health threats: what lessons have we learned?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Unique epidemiological and clinical features of the emerging 2019 novel coronavirus pneumonia (COVID-19) implicate special control measures</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the differences and similarities of COVID-10 with SARS, MERS and flu pandemic?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">things you do on purpose to stop transmission/control infection</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Public health measures taken to reduce the spread of an infectious disease outbreak in a population</obo:IAO_0000115>
         <rdfs:comment>eventually should be added to IDO</rdfs:comment>
         <rdfs:comment xml:lang="en">public health interventions vs. hospital PPE protocols: do those belong here too?</rdfs:comment>
@@ -2306,7 +2159,8 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000150"/>
+        <obo:IAO_0000112 xml:lang="en">How effective is ash versus soap for hand washing to disinfect hands from SARS-COV-2</obo:IAO_0000112>
         <rdfs:label xml:lang="en">hand washing process</rdfs:label>
     </owl:Class>
     
@@ -2315,8 +2169,12 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
-        <rdfs:label xml:lang="en">personal protective equipment process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000150"/>
+        <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance on 3D printed masks in terms of materials, donning, removing and disposing?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">What is the effectiveness of different types of masks and PPE for SARS-COV-2?</obo:IAO_0000112>
+        <rdfs:comment>Physical interventions to interrupt or reduce the spread of respiratory viruses</rdfs:comment>
+        <rdfs:label xml:lang="en">PPE process for general population</rdfs:label>
     </owl:Class>
     
 
@@ -2339,6 +2197,22 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">Microwave- and heat-based decontamination for facemask personal protective equipment (PPE) [CRD42020177036]</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Ultraviolet germicidal irradiation (UVGI) for facemask personal protective equipment (PPE): a systematic review [CRD42020176156]</obo:IAO_0000112>
         <rdfs:label xml:lang="en">PPE decontamination process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+        <rdfs:comment>1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</rdfs:comment>
+        <rdfs:comment>Chinese expert consensus on the perinatal and neonatal management for the prevention and control of the 2019 novel coronavirus infection (First edition)</rdfs:comment>
+        <rdfs:comment>Emergency management for preventing and controlling nosocomial infection of 2019 novel coronavirus: implications for the dermatology department</rdfs:comment>
+        <rdfs:comment>How can we reduce the transmission rates of nosocomial infections?</rdfs:comment>
+        <rdfs:comment>In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</rdfs:comment>
+        <rdfs:comment>Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</rdfs:comment>
+        <rdfs:comment>Preparing for a COVID-19 pandemic: a review of operating room outbreak response measures in a large tertiary hospital in Singapore</rdfs:comment>
+        <rdfs:label xml:lang="en">infection control measure for medical personnel</rdfs:label>
     </owl:Class>
     
 
@@ -2473,7 +2347,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">The psychological impact of quarantine and how to reduce it: Rapid review of the evidence</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the main drivers of fear, anxiety, rumours and stigma?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the psychological consequences of social distancing?</obo:IAO_0000112>
-        <rdfs:comment xml:lang="en">this isn&apos;t really a process either!</rdfs:comment>
         <rdfs:label xml:lang="en">psychological impact</rdfs:label>
     </owl:Class>
     
@@ -2486,6 +2359,16 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">Should we be giving patients longer prescriptions of repeat medications during pandemics?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Spacers are recommended by GINA rather than nebulisers. What does that mean for countries where spacers are not on the formulary, and so need out of pocket expenditure? What options are feasible eg sharing (keeping some at the practice) and cleaning; creating low cost options.</obo:IAO_0000112>
         <rdfs:label xml:lang="en">changes to pharmaceutical access during outbreak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+        <rdfs:comment>A Home Toolkit for Primary Prevention of Influenza by Individuals and Families</rdfs:comment>
+        <rdfs:label xml:lang="en">infection control measure for general population</rdfs:label>
     </owl:Class>
     
 
@@ -2582,7 +2465,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000159">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600003"/>
         <rdfs:label xml:lang="en">diagnostic test process</rdfs:label>
     </owl:Class>
     
@@ -2614,6 +2497,67 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
         <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
         <rdfs:label xml:lang="en">geographic origin of infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+        <rdfs:label xml:lang="en">infection control measure for education</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+        <rdfs:label xml:lang="en">infection control measure for at-risk populations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000136"/>
+        <rdfs:comment>Personal protective equipment for preventing highly infectious diseases due to exposure to contaminated body fluids in healthcare staff</rdfs:comment>
+        <rdfs:comment>What is the efficacy of standard face masks compared to respirator masks in preventing COVID-type respiratory illnesses in primary care staff</rdfs:comment>
+        <rdfs:label xml:lang="en">medical PPE process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000164"/>
+        <rdfs:comment>&quot;What is the evidence for recommending face masks in risk groups 
+ (by occupation or pre-existing health conditions)&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">at-risk PPE process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment>What is Duration of viral shedding in HIV+ on ART</rdfs:comment>
+        <rdfs:comment>What is the evidence for faecal shedding of SARS-COV-2 in children?</rdfs:comment>
+        <rdfs:label xml:lang="en">viral shedding process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+        <rdfs:comment>Infection control strategies for preventing the transmission of meticillin-resistant Staphylococcus aureus (MRSA) in nursing homes for older people</rdfs:comment>
+        <rdfs:label xml:lang="en">infection control measure for nursing homes</rdfs:label>
     </owl:Class>
     
 
@@ -4553,7 +4497,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31884076_36aa_4eae_85c3_66cb5b2e59bf2697049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-        <obo:IAO_0000112 xml:lang="en">Rapidly managing pneumonia in older people during a pandemic</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Rapidly managing pneumonia in older people during a pandemic
+
+[Q should also go in &apos;care for vulnerable community members during outbreak&apos;?]</obo:IAO_0000112>
         <rdfs:label xml:lang="en">infectious disease treatment for population by age during outbreak</rdfs:label>
     </owl:Class>
     
@@ -5014,7 +4960,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPMI_0000230">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000112 xml:lang="en">Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</obo:IAO_0000112>
+        <rdfs:comment>Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</rdfs:comment>
     </rdf:Description>
     
 
@@ -5501,8 +5447,8 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000112">
         <obo:IAO_0000112 xml:lang="en">Potential Rapid Diagnostics, Vaccine and Therapeutics for 2019 Novel Coronavirus (2019-nCoV): A Systematic Review</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Identification of candidate interventions [see COVID-19 Drug Therapy – Potential Options Tim Smith and Tony Prosser document]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
         <obo:IAO_0000112 xml:lang="en">Advances in the research of cytokine storm mechanism induced by Corona Virus Disease 2019 and the corresponding immunotherapies</obo:IAO_0000112>
