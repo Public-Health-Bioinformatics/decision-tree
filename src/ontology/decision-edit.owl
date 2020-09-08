@@ -277,6 +277,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000169 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DECISION_0000169">
+        <rdfs:comment>needs proper import</rdfs:comment>
+        <rdfs:label xml:lang="en">has disposition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
@@ -1501,18 +1510,8 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000087">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
+        <rdfs:comment>What are the main risk factors for health care workers for SARS, MERS and SARS-cov-2?</rdfs:comment>
         <rdfs:label xml:lang="en">infectious disease risk factor</rdfs:label>
     </owl:Class>
     
@@ -1533,7 +1532,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <!-- http://purl.obolibrary.org/obo/DECISION_0000089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000089">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115>An aspect of personal behavior or lifestyle, environmental exposure, or inborn or inherited characteristic, which, on the basis of epidemiologic evidence, is known to be associated with a health-related condition considered important to prevent.
 
 Any aspect of an individual&apos;s life, behavior, an environmental exposure, or an inborn or inherited characteristic that increases the likelihood of a disease, condition or injury.</obo:IAO_0000115>
@@ -1910,7 +1909,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000169"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1967,7 +1966,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-        <obo:IAO_0000112 xml:lang="en">What are the main risk factors for health care workers for SARS, MERS and SARS-cov-2?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">transmission process involving population factor</rdfs:label>
     </owl:Class>
