@@ -2112,10 +2112,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
-        <obo:IAO_0000112 xml:lang="en">COVID-19 clinical management guidelines</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the main interventions that can be easily adopted by LMICs?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What can we in Scotland/UK learn from the emergency measures that have been applied in other countries?</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">infectious disease control strategy involving location factor</rdfs:label>
+        <rdfs:label xml:lang="en">infectious disease control measure for geographical location</rdfs:label>
     </owl:Class>
     
 
@@ -2277,13 +2276,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
         <rdfs:comment>1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</rdfs:comment>
+        <rdfs:comment>COVID-19 clinical management guidelines</rdfs:comment>
         <rdfs:comment>Chinese expert consensus on the perinatal and neonatal management for the prevention and control of the 2019 novel coronavirus infection (First edition)</rdfs:comment>
         <rdfs:comment>Emergency management for preventing and controlling nosocomial infection of 2019 novel coronavirus: implications for the dermatology department</rdfs:comment>
         <rdfs:comment>How can we reduce the transmission rates of nosocomial infections?</rdfs:comment>
         <rdfs:comment>In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</rdfs:comment>
         <rdfs:comment>Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</rdfs:comment>
         <rdfs:comment>Preparing for a COVID-19 pandemic: a review of operating room outbreak response measures in a large tertiary hospital in Singapore</rdfs:comment>
-        <rdfs:label xml:lang="en">infection control measure for medical personnel</rdfs:label>
+        <rdfs:label xml:lang="en">infection control measure for medical procedure</rdfs:label>
     </owl:Class>
     
 
