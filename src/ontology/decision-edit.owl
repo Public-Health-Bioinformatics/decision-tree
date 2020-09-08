@@ -1540,7 +1540,7 @@ Any aspect of an individual&apos;s life, behavior, an environmental exposure, or
         <obo:IAO_0000119>http://www.ebi.ac.uk/efo/EFO_0003919</obo:IAO_0000119>
         <rdfs:comment>haven&apos;t imported the whole term from EFO because it doesn&apos;t seem to use BFO</rdfs:comment>
         <rdfs:comment>quality or disposition?</rdfs:comment>
-        <rdfs:label xml:lang="en">risk factor</rdfs:label>
+        <rdfs:label xml:lang="en">disease risk factor</rdfs:label>
     </owl:Class>
     
 
@@ -1943,6 +1943,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000087"/>
+        <rdfs:label xml:lang="en">biological risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000117">
@@ -2325,6 +2334,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000087"/>
+        <rdfs:label xml:lang="en">lifestyle risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000142">
@@ -2568,6 +2586,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000164">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000091"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000113"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
         <rdfs:label xml:lang="en">infection control measure for at-risk populations</rdfs:label>
     </owl:Class>
