@@ -1902,6 +1902,26 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000113">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+        <rdfs:label xml:lang="en">at-risk population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000115">
@@ -4677,16 +4697,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17471">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20587"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17734 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <rdfs:comment>Damion&apos;s note: requires a relation to the thing the population is at risk for, so it can&apos;t stand alone by itself as a datum.</rdfs:comment>
     </rdf:Description>
     
 
