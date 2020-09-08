@@ -1378,6 +1378,15 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">PPE process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000078">
@@ -1489,6 +1498,26 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000089"/>
+        <rdfs:label xml:lang="en">infectious disease risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000088">
@@ -1497,6 +1526,21 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <obo:IAO_0000112 xml:lang="en">How to assess breathlessness remotely / how to distinguish characteristics of COVID vs non COVID?</obo:IAO_0000112>
         <rdfs:comment xml:lang="en">eventually move to OBI</rdfs:comment>
         <rdfs:label xml:lang="en">remote patient assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:IAO_0000115>An aspect of personal behavior or lifestyle, environmental exposure, or inborn or inherited characteristic, which, on the basis of epidemiologic evidence, is known to be associated with a health-related condition considered important to prevent.
+
+Any aspect of an individual&apos;s life, behavior, an environmental exposure, or an inborn or inherited characteristic that increases the likelihood of a disease, condition or injury.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.ebi.ac.uk/efo/EFO_0003919</obo:IAO_0000119>
+        <rdfs:comment>haven&apos;t imported the whole term from EFO because it doesn&apos;t seem to use BFO</rdfs:comment>
+        <rdfs:comment>quality or disposition?</rdfs:comment>
+        <rdfs:label xml:lang="en">risk factor</rdfs:label>
     </owl:Class>
     
 
@@ -1536,7 +1580,6 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000112>2019 Novel Coronavirus Patients&apos; Clinical Characteristics, Discharge Rate, and Fatality Rate of Meta-Analysis</obo:IAO_0000112>
-        <rdfs:comment>do rates belong under &apos;quality&apos;?</rdfs:comment>
         <rdfs:label xml:lang="en">patient discharge rate</rdfs:label>
     </owl:Class>
     
@@ -2169,6 +2212,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000077"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000150"/>
         <obo:IAO_0000112 xml:lang="en">Are homemade masks useful – which specs / how to sterilise?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance on 3D printed masks in terms of materials, donning, removing and disposing?</obo:IAO_0000112>
@@ -2257,15 +2301,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000120"/>
         <rdfs:label xml:lang="en">ORF9c</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000141 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-        <rdfs:label xml:lang="en">treatment involving location factor</rdfs:label>
     </owl:Class>
     
 
@@ -2447,7 +2482,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">Immune responses in COVID-19 and potential vaccines: Lessons learned from SARS and MERS epidemic</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Potential Rapid Diagnostics, Vaccine and Therapeutics for 2019 Novel Coronavirus (2019-nCoV): A Systematic Review</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Progress on vaccine development</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">vaccine research process</rdfs:label>
+        <rdfs:label xml:lang="en">vaccine development process</rdfs:label>
     </owl:Class>
     
 
@@ -2465,7 +2500,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000159">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:label xml:lang="en">diagnostic test process</rdfs:label>
     </owl:Class>
     
@@ -2522,6 +2557,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000077"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000136"/>
         <rdfs:comment>Personal protective equipment for preventing highly infectious diseases due to exposure to contaminated body fluids in healthcare staff</rdfs:comment>
         <rdfs:comment>What is the efficacy of standard face masks compared to respirator masks in preventing COVID-type respiratory illnesses in primary care staff</rdfs:comment>
@@ -2533,10 +2569,11 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000077"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000164"/>
         <rdfs:comment>&quot;What is the evidence for recommending face masks in risk groups 
  (by occupation or pre-existing health conditions)&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">at-risk PPE process</rdfs:label>
+        <rdfs:label xml:lang="en">at-risk population PPE process</rdfs:label>
     </owl:Class>
     
 
