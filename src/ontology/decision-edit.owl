@@ -1382,6 +1382,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
         <obo:IAO_0000112 xml:lang="en">What are the transmission rates of SARS-COV-2 in ICU?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for the importance of outdoor transmission and of indoor transmission of SARS-COV-2?</obo:IAO_0000112>
         <obo:IAO_0000112>What is the evidence for transmission of SARS-COV-2 by children [or in schools]?</obo:IAO_0000112>
+        <rdfs:comment>Transmission routes of 2019-nCoV and controls in dental practice</rdfs:comment>
         <rdfs:label xml:lang="en">transmission process involving location factor</rdfs:label>
     </owl:Class>
     
@@ -1946,6 +1947,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000087"/>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus Disease 2019 (COVID-19) and Pregnancy: What Obstetricians Need to Know</obo:IAO_0000112>
         <rdfs:label xml:lang="en">biological risk factor</rdfs:label>
     </owl:Class>
     
@@ -2275,15 +2277,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
-        <rdfs:comment>1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</rdfs:comment>
-        <rdfs:comment>COVID-19 clinical management guidelines</rdfs:comment>
-        <rdfs:comment>Chinese expert consensus on the perinatal and neonatal management for the prevention and control of the 2019 novel coronavirus infection (First edition)</rdfs:comment>
-        <rdfs:comment>Emergency management for preventing and controlling nosocomial infection of 2019 novel coronavirus: implications for the dermatology department</rdfs:comment>
-        <rdfs:comment>How can we reduce the transmission rates of nosocomial infections?</rdfs:comment>
-        <rdfs:comment>In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</rdfs:comment>
-        <rdfs:comment>Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</rdfs:comment>
-        <rdfs:comment>Preparing for a COVID-19 pandemic: a review of operating room outbreak response measures in a large tertiary hospital in Singapore</rdfs:comment>
-        <rdfs:label xml:lang="en">infection control measure for medical procedure</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">1) Chorhexidine bathing of the critically ill for the prevention of hospital-acquired infection</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">COVID-19 clinical management guidelines</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Chinese expert consensus on the perinatal and neonatal management for the prevention and control of the 2019 novel coronavirus infection (First edition)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Coronavirus Disease 2019 (COVID-19) and Pregnancy: What Obstetricians Need to Know</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Emergency management for preventing and controlling nosocomial infection of 2019 novel coronavirus: implications for the dermatology department</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">How can we reduce the transmission rates of nosocomial infections?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">In the absence of evidence, what is the guidance of using plastic sheeting as a barrier in pharmacies?</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Practical recommendations for critical care and anesthesiology teams caring for novel coronavirus (2019-nCoV) patients</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Preparing for a COVID-19 pandemic: a review of operating room outbreak response measures in a large tertiary hospital in Singapore</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Transmission routes of 2019-nCoV and controls in dental practice</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">infection control measure for medical practice</rdfs:label>
     </owl:Class>
     
 
@@ -2353,8 +2357,19 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000143 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000073"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000112 xml:lang="en">Chinese expert consensus on the perinatal and neonatal management for the prevention and control of the 2019 novel coronavirus infection (First edition)</obo:IAO_0000112>
+        <rdfs:comment>Coronavirus Disease 2019 (COVID-19) and Pregnancy: What Obstetricians Need to Know</rdfs:comment>
         <rdfs:label xml:lang="en">transmission process involving a biological process factor</rdfs:label>
     </owl:Class>
     
@@ -2642,6 +2657,16 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000091"/>
         <rdfs:comment>Infection control strategies for preventing the transmission of meticillin-resistant Staphylococcus aureus (MRSA) in nursing homes for older people</rdfs:comment>
         <rdfs:label xml:lang="en">infection control measure for nursing homes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112 xml:lang="en">Which GPs and pharmacists should volunteer for hothubs - based on risk, consequences of getting sick, and from an ethical perspective?</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">medical personnel selection process</rdfs:label>
     </owl:Class>
     
 
