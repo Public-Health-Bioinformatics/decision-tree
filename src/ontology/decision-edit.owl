@@ -4466,6 +4466,19 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">An aggregate of organisms of the same Species.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:29:31Z</dc:date>
+        <rdfs:comment xml:lang="en">The organism population may be delineated by spatio-temporal proximity or by demographic criteria such as age.</rdfs:comment>
+        <rdfs:label xml:lang="en">organism population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000511 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000511">
@@ -5411,23 +5424,10 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
-    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000509 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000509">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">An aggregate of organisms of the same Species.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:29:31Z</dc:date>
-        <rdfs:comment xml:lang="en">The organism population may be delineated by spatio-temporal proximity or by demographic criteria such as age.</rdfs:comment>
-        <rdfs:label xml:lang="en">organism population</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
         <obo:IAO_0000115 xml:lang="en">An organism population whose members are not infected with an infectious agent and who lack immunity to the infectious agent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:28:24Z</dc:date>
@@ -5546,8 +5546,8 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000112">
         <obo:IAO_0000112 xml:lang="en">Potential Rapid Diagnostics, Vaccine and Therapeutics for 2019 Novel Coronavirus (2019-nCoV): A Systematic Review</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Identification of candidate interventions [see COVID-19 Drug Therapy – Potential Options Tim Smith and Tony Prosser document]</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000114">
         <obo:IAO_0000112 xml:lang="en">Advances in the research of cytokine storm mechanism induced by Corona Virus Disease 2019 and the corresponding immunotherapies</obo:IAO_0000112>
