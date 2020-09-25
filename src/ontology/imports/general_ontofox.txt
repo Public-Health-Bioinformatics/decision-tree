@@ -1,227 +1,14 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/decision/imports/general_ontofox.owl
 
-[Source ontology]
-TRANS
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/TRANS_0000000 #transmission process
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-[Source ontology]
-ENVO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/ENVO_01001079 #atmospheric weather
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
 
 
 [Source ontology]
-IDO
+APOLLO_SV
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000488 #infectious agent seroprevalence
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000531 #host
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000447 #herd immunity to infectious organism
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-DOID
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/DOID_0080600 #covid-19
-
-[Top level source term URIs and target direct superclass URIs]
-
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-NCIT
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/NCIT_C17930 #Immune Response Process
-
-[Top level source term URIs and target direct superclass URIs]
-
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-
-[Source ontology]
-OGMS
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OGMS_0000114 #immunotherapy procedure
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000502 #infectious disease epidemic
-http://purl.obolibrary.org/obo/IDO_0000503 #infectious disease pandemic
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000543 #vehicle of infectious agent
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000421 #infectious agent vehicle role
-includeAllChildren
+http://purl.obolibrary.org/obo/APOLLO_SV_00000545 #disease surveillance
+http://purl.obolibrary.org/obo/APOLLO_SV_00000002 #basic reproduction number
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -254,6 +41,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_2697049 #severe acute respiratory syndr
 http://purl.obolibrary.org/obo/NCBITaxon_308726 #Human coronavirus type 5
 http://purl.obolibrary.org/obo/NCBITaxon_384335 #Human coronavirus NO
 includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_11118 #Coronaviridae
 
 [Top level source term URIs and target direct superclass URIs]
 
@@ -269,12 +57,110 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 [Source annotation URIs to be excluded]
 
 
+
+
+
+
+
+[Source ontology]
+CIDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CIDO_0000001 #coronavirus infectious disease process
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
+
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DOID_0080600 #covid-19
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ENVO_02000019 #bodily fluid
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+
+[Source annotation URIs to be excluded]
+
+
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ENVO_01001079 #atmospheric weather
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
 [Source ontology]
 ENVO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/ENVO_01000831 #droplet
+includeAllChildren
 http://purl.obolibrary.org/obo/ENVO_00002008 #dust
+includeAllChildren
 http://purl.obolibrary.org/obo/ENVO_00010505 #aerosol
 includeAllChildren
 
@@ -311,33 +197,21 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 [Source annotation URIs to be excluded]
 
 
-[Source ontology]
-CIDO
 
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/NCBITaxon_11118 #Coronaviridae
-
-[Top level source term URIs and target direct superclass URIs]
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-
-[Source annotation URIs to be excluded]
 
 
 [Source ontology]
-PATO
+IDO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/PATO_0015024 #increased porosity
-http://purl.obolibrary.org/obo/PATO_0015025 #decreased porosity
+http://purl.obolibrary.org/obo/IDO_0000488 #infectious agent seroprevalence
+includeAllChildren
+http://purl.obolibrary.org/obo/IDO_0000531 #host
+includeAllChildren
+http://purl.obolibrary.org/obo/IDO_0000543 #vehicle of infectious agent
+includeAllChildren
+http://purl.obolibrary.org/obo/IDO_0000421 #infectious agent vehicle role
+includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -350,52 +224,6 @@ http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-
-[Source annotation URIs to be excluded]
-
-
-
-[Source ontology]
-NCIT
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/NCIT_C25193 #occupation
-
-[Top level source term URIs and target direct superclass URIs]
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-
-[Source annotation URIs to be excluded]
-
-
-
-[Source ontology]
-PATO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
 
 [Source annotation URIs to be excluded]
 
@@ -405,9 +233,34 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 IDO
 
 [Low level source term URIs]
+http://purl.obolibrary.org/obo/IDO_0000447 #herd immunity to infectious organism
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+[Source ontology]
+IDO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IDO_0000555 #disinfectant
+http://purl.obolibrary.org/obo/IDO_0000489 #infectious disease mortality rate
+http://purl.obolibrary.org/obo/IDO_0000464 #infectivity
 http://purl.obolibrary.org/obo/IDO_0000511 #infected population
 http://purl.obolibrary.org/obo/IDO_0000592 #immune population
-
+http://purl.obolibrary.org/obo/IDO_0000502 #infectious disease epidemic
+http://purl.obolibrary.org/obo/IDO_0000503 #infectious disease pandemic
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -423,6 +276,11 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source annotation URIs to be excluded]
+
+
+
+
+
 
 
 [Source ontology]
@@ -445,46 +303,26 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 [Source annotation URIs to be excluded]
 
 
-[Source ontology]
-ENVO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/ENVO_02000019 #bodily fluid
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-
-[Source annotation URIs to be excluded]
-
 
 
 [Source ontology]
 NCIT
 
 [Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C17930 #Immune Response Process
+http://purl.obolibrary.org/obo/NCIT_C25193 #occupation
 http://purl.obolibrary.org/obo/NCIT_C15747 #supportive care
 
 [Top level source term URIs and target direct superclass URIs]
 
 [Source term retrieval setting]
+includeNoIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
 
 [Source annotation URIs to be excluded]
 
@@ -514,10 +352,10 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 [Source ontology]
-IDO
+OBCS
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000464 #infectivity
+http://purl.obolibrary.org/obo/OBCS_0000107 #randomized controlled trial design
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -531,16 +369,18 @@ http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
-
 [Source annotation URIs to be excluded]
+
+
 
 
 
 [Source ontology]
-APOLLO_SV
+OBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/APOLLO_SV_00000002 #basic reproduction number
+http://purl.obolibrary.org/obo/OBI_0600003 #performing a clinical assessment
+http://purl.obolibrary.org/obo/OBI_0002624 #case-control study design
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -554,15 +394,18 @@ http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
-
 [Source annotation URIs to be excluded]
+
+
+
 
 
 [Source ontology]
-IDO
+OGMS
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000555 #disinfectant
+http://purl.obolibrary.org/obo/OGMS_0000063 #disease course
+http://purl.obolibrary.org/obo/OGMS_0000114 #immunotherapy procedure
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -576,8 +419,60 @@ http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
+[Source annotation URIs to be excluded]
+
+
+
+
+
+[Source ontology]
+OMIABIS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OMIABIS_0001018 #cross sectional study design
+http://purl.obolibrary.org/obo/OMIABIS_0001020 #cohort study design
+http://purl.obolibrary.org/obo/OMIABIS_0001008 #comorbidity
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 [Source annotation URIs to be excluded]
+
+
+
+
+
+
+
+[Source ontology]
+OMIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OMIT_0004227 #Chronic Disease
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
 
 
 
@@ -601,11 +496,14 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 
+
 [Source ontology]
-OGMS
+PATO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/OGMS_0000063 #disease course
+http://purl.obolibrary.org/obo/PATO_0015024 #increased porosity
+http://purl.obolibrary.org/obo/PATO_0015025 #decreased porosity
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -619,7 +517,56 @@ http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
+
 [Source annotation URIs to be excluded]
+
+
+
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0010002 #is carrier of
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
+
+[Source ontology]
+TRANS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/TRANS_0000000 #transmission process
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
+[Source annotation URIs to be excluded]
+
+
+
 
 
 [Source ontology]
@@ -645,150 +592,16 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 
-[Source ontology]
-CIDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/CIDO_0000001 #coronavirus infectious disease process
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-[Source ontology]
-APOLLO_SV
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/APOLLO_SV_00000545 #disease surveillance
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
 
 
 
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000489 #infectious disease mortality rate
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
 
 
 
-[Source ontology]
-OMIABIS
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OMIABIS_0001008 #comorbidity
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
 
 
 
-[Source ontology]
-OMIT
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OMIT_0004227 #Chronic Disease
-
-[Top level source term URIs and target direct superclass URIs]
-
-[Source term retrieval setting]
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
 
 
 
-[Source ontology]
-RO
 
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/RO_0010002 #is carrier of
-
-[Top level source term URIs and target direct superclass URIs]
-
-[Source term retrieval setting]
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
-
-
-
-[Source ontology]
-OBI
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OBI_0600003 #performing a clinical assessment
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-[Source annotation URIs to be excluded]
