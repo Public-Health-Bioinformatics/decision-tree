@@ -1256,18 +1256,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
-        <obo:IAO_0000115>Disease process is the progression disease in an individual over time. The process begins with the appropriate exposure to or accumulation of factors sufficient for the disease process to begin in a susceptible host. For an infectious disease, the exposure is a microorganism. For cancer, the exposure may be a factor that initiates the process, such as asbestos fibers or components in tobacco smoke (for lung cancer), or one that promotes the process, such as estrogen (for endometrial cancer).</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
-        <rdfs:label xml:lang="en">disease process</rdfs:label>
-        <rdfs:label xml:lang="zh">疾病过程</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IDOMAL_0001255 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDOMAL_0001255">
@@ -1966,27 +1954,6 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical diagnosis</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>performing a clinical assessment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
-        <rdfs:label>bodily process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A bodily process that is clinically abnormal.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
-        <rdfs:label>pathological bodily process</rdfs:label>
     </owl:Class>
     
 
