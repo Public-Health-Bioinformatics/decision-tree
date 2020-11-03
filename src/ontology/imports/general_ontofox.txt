@@ -9,6 +9,7 @@ APOLLO_SV
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/APOLLO_SV_00000545 #disease surveillance
 http://purl.obolibrary.org/obo/APOLLO_SV_00000002 #basic reproduction number
+http://purl.obolibrary.org/obo/APOLLO_SV_00000550 #contact tracing
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -61,12 +62,12 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 
 
 
-
 [Source ontology]
 CIDO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CIDO_0000001 #coronavirus infectious disease process
+http://purl.obolibrary.org/obo/CIDO_0000423 #coronavirus disease diagnostic process
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
@@ -261,6 +262,8 @@ http://purl.obolibrary.org/obo/IDO_0000511 #infected population
 http://purl.obolibrary.org/obo/IDO_0000592 #immune population
 http://purl.obolibrary.org/obo/IDO_0000502 #infectious disease epidemic
 http://purl.obolibrary.org/obo/IDO_0000503 #infectious disease pandemic
+http://purl.obolibrary.org/obo/IDO_0000545 #infectious agent reservoir
+http://purl.obolibrary.org/obo/IDO_0000424 #reservoir of infectious agent role
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -573,7 +576,8 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 VO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+http://purl.obolibrary.org/obo/VO_0004897 #coronavirus vaccine
+includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
