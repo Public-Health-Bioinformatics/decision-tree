@@ -33,13 +33,21 @@ CIDO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/NCBITaxon_11137 #Human coronavirus 229E
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_31631 #Human coronavirus OC43
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_290028 #Human coronavirus HKU1
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_277944 #Human coronavirus NL63
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_694009 #Severe acute respiratory syndrome-related coronavirus
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_1335626 #Middle East respiratory syndrome-related coronavirus
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_2697049 #severe acute respiratory syndrome coronavirus 2
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_308726 #Human coronavirus type 5
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_384335 #Human coronavirus NO
 includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_11118 #Coronaviridae
@@ -67,6 +75,7 @@ CIDO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CIDO_0000001 #coronavirus infectious disease process
+includeAllChildren
 http://purl.obolibrary.org/obo/CIDO_0000423 #coronavirus disease diagnostic process
 includeAllChildren
 
@@ -213,6 +222,15 @@ http://purl.obolibrary.org/obo/IDO_0000543 #vehicle of infectious agent
 includeAllChildren
 http://purl.obolibrary.org/obo/IDO_0000421 #infectious agent vehicle role
 includeAllChildren
+http://purl.obolibrary.org/obo/IDO_0000555 #disinfectant
+http://purl.obolibrary.org/obo/IDO_0000489 #infectious disease mortality rate
+http://purl.obolibrary.org/obo/IDO_0000464 #infectivity
+http://purl.obolibrary.org/obo/IDO_0000511 #infected population
+http://purl.obolibrary.org/obo/IDO_0000592 #immune population
+http://purl.obolibrary.org/obo/IDO_0000502 #infectious disease epidemic
+http://purl.obolibrary.org/obo/IDO_0000503 #infectious disease pandemic
+http://purl.obolibrary.org/obo/IDO_0000545 #infectious agent reservoir
+http://purl.obolibrary.org/obo/IDO_0000424 #reservoir of infectious agent role
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
@@ -251,36 +269,6 @@ http://www.geneontology.org/formats/oboInOwl#hasSynonym
 [Source annotation URIs to be excluded]
 
 
-[Source ontology]
-IDO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IDO_0000555 #disinfectant
-http://purl.obolibrary.org/obo/IDO_0000489 #infectious disease mortality rate
-http://purl.obolibrary.org/obo/IDO_0000464 #infectivity
-http://purl.obolibrary.org/obo/IDO_0000511 #infected population
-http://purl.obolibrary.org/obo/IDO_0000592 #immune population
-http://purl.obolibrary.org/obo/IDO_0000502 #infectious disease epidemic
-http://purl.obolibrary.org/obo/IDO_0000503 #infectious disease pandemic
-http://purl.obolibrary.org/obo/IDO_0000545 #infectious agent reservoir
-http://purl.obolibrary.org/obo/IDO_0000424 #reservoir of infectious agent role
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-
-
-[Source annotation URIs to be excluded]
-
-
 
 
 
@@ -315,6 +303,7 @@ NCIT
 http://purl.obolibrary.org/obo/NCIT_C17930 #Immune Response Process
 http://purl.obolibrary.org/obo/NCIT_C25193 #occupation
 http://purl.obolibrary.org/obo/NCIT_C15747 #supportive care
+http://purl.obolibrary.org/obo/NCIT_C18959 #Prognostic Factor
 
 [Top level source term URIs and target direct superclass URIs]
 
