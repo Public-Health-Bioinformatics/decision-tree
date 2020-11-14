@@ -1620,21 +1620,10 @@ Any aspect of an individual&apos;s life, behavior, an environmental exposure, or
     <!-- http://purl.obolibrary.org/obo/DECISION_0000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000096">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000123"/>
         <obo:IAO_0000112>Clinical Feature of COVID-19 in Elderly Patients: A Comparison With Young and Middle-Aged Patients</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Potential Maternal and Infant Outcomes from (Wuhan) Coronavirus 2019-nCoV Infecting Pregnant Women: Lessons from SARS, MERS, and Other Human Coronavirus Infections</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">infectious disease course involving population factor</rdfs:label>
+        <rdfs:label xml:lang="en">infectious disease course involving demographic factor</rdfs:label>
     </owl:Class>
     
 
@@ -2073,7 +2062,22 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000123 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000123">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000531"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
         <obo:IAO_0000112 xml:lang="en">Asymptomatic carrier state, acute respiratory disease, and pneumonia due to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2): Facts and myths</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Insights into the Recent 2019 Novel Coronavirus (SARS-CoV-2) in Light of Past Human Coronavirus Outbreaks</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Novel coronavirus 2019-nCoV: prevalence, biological and clinical characteristics comparison with SARS-CoV and MERS-CoV</obo:IAO_0000112>
@@ -2130,9 +2134,13 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000531"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:onProperty>
+                                            <rdf:Description>
+                                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                            </rdf:Description>
+                                        </owl:onProperty>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001008"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -2142,7 +2150,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000123"/>
         <obo:IAO_0000112 xml:lang="en">Does overweight/obesity increase the risk of severe disease or death?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Prevalence of comorbidities in the novel Wuhan coronavirus (COVID-19) infection: a systematic review and meta-analysis</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">What are the key risk factors that lead to hospitalisation, ICU admission or death from COVID-19?</obo:IAO_0000112>
@@ -4862,7 +4870,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCIT_C25189 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25190"/>
     </rdf:Description>
     
 
