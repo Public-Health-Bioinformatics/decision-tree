@@ -482,6 +482,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000001 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIDO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000123"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000000">
@@ -1392,7 +1400,7 @@ ISSUE:  infectious disease identification in a CASE is not &quot;outbreak infect
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:label xml:lang="en">PPE process</rdfs:label>
+        <rdfs:label xml:lang="en">personal protection process</rdfs:label>
     </owl:Class>
     
 
@@ -2640,7 +2648,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000167">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
         <rdfs:comment>What is Duration of viral shedding in HIV+ on ART</rdfs:comment>
         <rdfs:comment>What is the evidence for faecal shedding of SARS-COV-2 in children?</rdfs:comment>
         <rdfs:label xml:lang="en">viral shedding process</rdfs:label>
@@ -4484,6 +4492,42 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <obo:IAO_0000115 xml:lang="en">An organism population whose members are not infected with an infectious agent and who lack immunity to the infectious agent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:28:24Z</dc:date>
+        <rdfs:label xml:lang="en">susceptible population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious agent with a capability to infect human hosts.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:36:27Z</dc:date>
+        <rdfs:label xml:lang="en">infectious human pathogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000115 xml:lang="en">An organism that is not infected with an infectious agent and lacks protective immunity to the infectious agent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:25:32Z</dc:date>
+        <rdfs:label xml:lang="en">susceptible organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPATH_0 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_0">
@@ -5362,13 +5406,13 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000659"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
@@ -5417,42 +5461,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">The role of asymptomatic SARS-CoV-2 infections: rapid living systematic review and meta-analysis (https://osf.io/9ewys/)</obo:IAO_0000112>
         <obo:IAO_0000112>What is the role of pre-symptomatic transmission of SARS-COV-2?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">asymptomatic transmission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000514 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <obo:IAO_0000115 xml:lang="en">An organism population whose members are not infected with an infectious agent and who lack immunity to the infectious agent.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:28:24Z</dc:date>
-        <rdfs:label xml:lang="en">susceptible population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000639 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000639">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000925"/>
-        <obo:IAO_0000115 xml:lang="en">An infectious agent with a capability to infect human hosts.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:36:27Z</dc:date>
-        <rdfs:label xml:lang="en">infectious human pathogen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000659 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/IDO_0000659">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <obo:IAO_0000115 xml:lang="en">An organism that is not infected with an infectious agent and lacks protective immunity to the infectious agent.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:25:32Z</dc:date>
-        <rdfs:label xml:lang="en">susceptible organism</rdfs:label>
     </owl:Class>
     
 
