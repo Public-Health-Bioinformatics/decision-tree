@@ -416,6 +416,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000550 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000550">
+        <obo:IAO_0000112 xml:lang="en">Contact Tracing</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
@@ -2192,6 +2200,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000128">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000327"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000128"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
         <rdfs:label xml:lang="en">quarantine process</rdfs:label>
     </owl:Class>
@@ -2212,6 +2231,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000130">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000230"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000171"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000112 xml:lang="en">&quot;What is the reduction in R0 achieved by different levels of restrictions, 
  what is R0 at which these are relaxed (R0 for different exit strategies) in different countries, and if countries use R0 in their decision exit strategy making process.&quot;</obo:IAO_0000112>
@@ -2235,6 +2265,17 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000131">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000550"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000545"/>
         <rdfs:label xml:lang="en">contact tracing process</rdfs:label>
     </owl:Class>
@@ -2681,6 +2722,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000112 xml:lang="en">Which GPs and pharmacists should volunteer for hothubs - based on risk, consequences of getting sick, and from an ethical perspective?</obo:IAO_0000112>
         <rdfs:label xml:lang="en">medical personnel selection process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000130"/>
+        <rdfs:label xml:lang="en">case isolation process</rdfs:label>
     </owl:Class>
     
 
@@ -5552,9 +5602,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
         <rdfs:comment xml:lang="en">eventually change to IDO term once IDO has one</rdfs:comment>
         <obo:IAO_0000112 xml:lang="en">Potential interventions for novel coronavirus in China: A systematic review</obo:IAO_0000112>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000550">
-        <obo:IAO_0000112 xml:lang="en">Contact Tracing</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>

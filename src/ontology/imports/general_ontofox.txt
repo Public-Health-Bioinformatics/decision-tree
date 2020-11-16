@@ -10,6 +10,13 @@ APOLLO_SV
 http://purl.obolibrary.org/obo/APOLLO_SV_00000545 #disease surveillance
 http://purl.obolibrary.org/obo/APOLLO_SV_00000002 #basic reproduction number
 http://purl.obolibrary.org/obo/APOLLO_SV_00000550 #contact tracing
+http://purl.obolibrary.org/obo/APOLLO_SV_00000327 #quarantine control strategy
+http://purl.obolibrary.org/obo/APOLLO_SV_00000230 #case isolation control strategy
+includeAllChildren
+http://purl.obolibrary.org/obo/APOLLO_SV_00000486 #travel-related infectious disease control strategy
+includeAllChildren
+http://purl.obolibrary.org/obo/APOLLO_SV_00000229 #place closure control strategy
+includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
