@@ -4785,6 +4785,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C120684 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C120684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000114"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C124295 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C124295">
@@ -4898,6 +4906,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <obo:IAO_0000112 xml:lang="en">COVID-19, cytokines and immunosuppression: what can we learn from severe acute respiratory syndrome?</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Coronavirus infections and immune responses</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Immune responses in COVID-19 and potential vaccines: Lessons learned from SARS and MERS epidemic</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18959 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18959">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </rdf:Description>
     
 
