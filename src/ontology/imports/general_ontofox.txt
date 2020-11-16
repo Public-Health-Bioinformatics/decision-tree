@@ -304,6 +304,7 @@ http://purl.obolibrary.org/obo/NCIT_C17930 #Immune Response Process
 http://purl.obolibrary.org/obo/NCIT_C25193 #occupation
 http://purl.obolibrary.org/obo/NCIT_C15747 #supportive care
 http://purl.obolibrary.org/obo/NCIT_C18959 #Prognostic Factor
+http://purl.obolibrary.org/obo/NCIT_C120684 #Endpoint Dilution Assay
 
 [Top level source term URIs and target direct superclass URIs]
 
