@@ -1919,6 +1919,15 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label xml:lang="en">virus quantification assay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DECISION_0000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000115">
@@ -5088,6 +5097,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000893 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DECISION_0000114"/>
     </rdf:Description>
     
 
