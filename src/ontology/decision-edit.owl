@@ -4838,7 +4838,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/NCIT_C15747 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C15747">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
         <obo:IAO_0000112 xml:lang="en">Practical Recommendations for Critical Care and Anesthesiology Teams Caring for Novel Coronavirus (2019-nCoV) Patients</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Recommendations for Critically Ill Patients With COVID-19</obo:IAO_0000112>
         <obo:IAO_0000112>What are the optimal strategies to offer supportive care to those with COVID-19 disease?</obo:IAO_0000112>
@@ -5178,6 +5178,7 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000230"/>
         <obo:IAO_0000112 xml:lang="en">COVID-19 clinical management guidelines</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Measures for diagnosing and treating infections by a novel coronavirus responsible for a pneumonia outbreak originating in Wuhan, China</obo:IAO_0000112>
     </rdf:Description>
