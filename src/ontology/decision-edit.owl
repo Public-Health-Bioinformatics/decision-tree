@@ -2725,6 +2725,35 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000545"/>
+        <rdfs:label xml:lang="en">animal infectious agent reservoir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000545"/>
+        <rdfs:label xml:lang="en">human infectious agent reservoir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DECISION_0000175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000545"/>
+        <rdfs:label xml:lang="en">environmental infectious agent reservoir</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
@@ -4550,14 +4579,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:28:24Z</dc:date>
         <rdfs:label xml:lang="en">susceptible population</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO_0000545 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000545">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
-    </rdf:Description>
     
 
 
