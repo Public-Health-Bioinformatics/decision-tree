@@ -18,11 +18,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
@@ -35,9 +38,6 @@
         <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
@@ -2035,6 +2035,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1216927 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1216927">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudan ebolavirus - Nakisamata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1235996 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1235996">
@@ -2071,6 +2081,96 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bat coronavirus Cp/Yunnan2011</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_694009"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128947 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128947">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus - Gabon (1994-1997)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1570291"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128948 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128948">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudan virus - Boniface, Sudan,1976</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128949 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128949">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudan ebolavirus - Maleo (1979)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128951 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128951">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus - Zaire (1995)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1570291"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128952">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus - Mayinga, Zaire, 1976</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1570291"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_128999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_128999">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tai Forest virus - Cote d&#39;Ivoire, Cote d&#39;Ivoire, 1994</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186541"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_129000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_129000">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus - Eckron (Zaire, 1976)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1570291"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_129003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_129003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reston ebolavirus - Reston</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186539"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_129004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_129004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reston ebolavirus - Siena/Philippine-92</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186539"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
 
@@ -2245,6 +2345,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1570291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1570291">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186538"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1699095 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1699095">
@@ -2285,12 +2395,81 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebolavirus</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186538">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zaire ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186539">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reston ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186540">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudan ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186541">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tai Forest ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1891187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1891187">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zaire ebolavirus Makona</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186538"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1895985 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1895985">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camel alphacoronavirus Camel229E</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11137"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2010960 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2010960">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bombali ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_372255"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
 
@@ -2311,6 +2490,16 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SARS-related betacoronavirus Rp3/2004</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_694009"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_205488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_205488">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus sp.</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_372255"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
 
@@ -4463,6 +4652,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_372255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_372255">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified Ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_384335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_384335">
@@ -4672,6 +4871,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_386032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_386032">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reston ebolavirus - Reston (1989)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186539"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_386033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_386033">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sudan ebolavirus - Uganda (2000)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_388737 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_388737">
@@ -4718,6 +4937,36 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SARS coronavirus TJ01</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_694009"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_428691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_428691">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus Yambio0401</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_428692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_428692">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus Yambio0402</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_428693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_428693">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebola virus Yambio0403</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186540"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
 
@@ -4808,6 +5057,16 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SARS coronavirus BJ182b</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_694009"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_565995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_565995">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bundibugyo ebolavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
 
@@ -6924,7 +7183,7 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
@@ -6933,7 +7192,7 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>

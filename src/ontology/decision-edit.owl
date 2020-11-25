@@ -1780,9 +1780,9 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     <!-- http://purl.obolibrary.org/obo/DECISION_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000108">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000156"/>
         <rdfs:comment>From Rhiannon&apos;s COVID-19 Vocabulary sheet.  Where available, URIs are for ontology entries for the protein product of each gene.  Term labels are the gene names, with the sheet&apos;s alternate labels in parentheses as alternative terms here.</rdfs:comment>
-        <rdfs:label xml:lang="en">SARS-CoV-2 genes</rdfs:label>
+        <rdfs:label xml:lang="en">SARS-CoV-2 gene</rdfs:label>
     </owl:Class>
     
 
