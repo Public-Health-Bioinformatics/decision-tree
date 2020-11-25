@@ -2622,16 +2622,6 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DECISION_0000161 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000161">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
-        <obo:IAO_0000112 xml:lang="en">The origin, transmission and clinical therapies on coronavirus disease 2019 (COVID-19) outbreak - an update on the status</obo:IAO_0000112>
-        <rdfs:label xml:lang="en">infectious agent origin</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DECISION_0000162 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DECISION_0000162">
@@ -4560,6 +4550,14 @@ BUT: diseases have phases - through latent/incubation/contagious/ initial / subs
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-29T19:28:24Z</dc:date>
         <rdfs:label xml:lang="en">susceptible population</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000545 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000537"/>
+    </rdf:Description>
     
 
 
