@@ -18,14 +18,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
@@ -38,6 +35,9 @@
         <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
@@ -660,6 +660,90 @@
         <rdfs:label xml:lang="en">COVID-19 diagnostic process using LAMP assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIDO_0000038"/>
         <obo:IAO_0000115>A COVID-19 diagnostic process that detects SARS-CoV-2 by loop mediated isothermal amplification ((LAMP) assay</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000230">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade S virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <obo:IAO_0000118>SARS-CoV-2 type A</obo:IAO_0000118>
+        <obo:IAO_0000115>A SARS-CoV-2 variant virus that has a signature variant ORF8-L84S.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000231">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade L virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <obo:IAO_0000115>Clade L is the reference genome that was found at the beginning of the COVID-19 pandemic (December 2019).</obo:IAO_0000115>
+        <obo:IAO_0000118>SARS-CoV-2 type B virus</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000232">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade G virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <obo:IAO_0000118>SARS-CoV-2 type B.1 virus</obo:IAO_0000118>
+        <obo:IAO_0000115>A SARS-CoV-2 variant virus that has signature mutation in Spike D614G.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000233">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade V virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <obo:IAO_0000118>SARS-CoV-2 type B.2 virus</obo:IAO_0000118>
+        <obo:IAO_0000115>A SARS-CoV-2 variant virus that has a signature variant of the ORF3a coding protein NS3-G251.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000234">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade GH virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIDO_0000232"/>
+        <obo:IAO_0000118>SARS-CoV-2 type B.1.x virus</obo:IAO_0000118>
+        <obo:IAO_0000115>A SARS-CoV-2 clade G variant virus that has signature mutations in Spike D614G and ORF3a Q57H.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000235">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade GR virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIDO_0000232"/>
+        <obo:IAO_0000115>A SARS-CoV-2 clade G variant virus that carries the combination of Spike D614G and Nucleocapsid RG203KR mutations.</obo:IAO_0000115>
+        <obo:IAO_0000118>SARS-CoV-2 type B.1.1 virus</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIDO_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIDO_0000236">
+        <rdfs:label xml:lang="en">SARS-CoV-2 clade O virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+        <obo:IAO_0000115>a SARS-CoV-2 virus that belongs to clade O, which stands for &quot;Other&quot;, meaning it is not G, GH, GR, L, S, or V.</obo:IAO_0000115>
+        <obo:IAO_0000118>SARS-CoV-2 type B.2 virus</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cido.owl"/>
     </owl:Class>
     
@@ -5067,6 +5151,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_0000000002">
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
@@ -5838,6 +5933,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/VO_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000156">
+        <rdfs:label>viral gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/VO_0000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000609">
@@ -5864,6 +5969,17 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000932">
         <rdfs:label>canine coronavirus vaccine</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0004897"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0001444">
+        <rdfs:label xml:lang="en">SARS-CoV gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000156"/>
+        <obo:IAO_0000115>A viral gene that is from SARS-CoV.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
     </owl:Class>
     
@@ -6811,16 +6927,16 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
 </rdf:RDF>
 
